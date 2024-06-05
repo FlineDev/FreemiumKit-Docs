@@ -1,23 +1,9 @@
 // swift-tools-version: 5.10
-// The swift-tools-version declares the minimum version of Swift required to build this package.
-
 import PackageDescription
 
 let package = Package(
-    name: "FreemiumKit-Docs",
-    products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
-        .library(
-            name: "FreemiumKit-Docs",
-            targets: ["FreemiumKit-Docs"]),
-    ],
-    targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
-        .target(
-            name: "FreemiumKit-Docs"),
-        .testTarget(
-            name: "FreemiumKit-DocsTests",
-            dependencies: ["FreemiumKit-Docs"]),
-    ]
+    name: "FreemiumKit",
+    products: [.library(name: "FreemiumKit", targets: ["FreemiumKit"])],
+    dependencies: [.package(url: "https://github.com/apple/swift-docc-plugin", from: "1.3.0")],
+    targets: [.target(name: "FreemiumKit")]
 )
