@@ -40,6 +40,24 @@ jobs:
             --disable-indexing \
             --transform-for-static-hosting \
             --output-path ./docs
+
+      - name: Create index.html for redirection
+        run: |
+          echo '<!DOCTYPE html>
+          <html lang="en">
+          <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Redirecting...</title>
+              <meta http-equiv="refresh" content="0; url=/documentation/index/">
+              <script type="text/javascript">
+                  window.location.href = "/documentation/index/";
+              </script>
+          </head>
+          <body>
+              <p>If you are not redirected automatically, follow this <a href="/documentation/index/">Link</a>.</p>
+          </body>
+          </html>' > ./docs/index.html
       
       - name: Deploy to Pages
         uses: JamesIves/github-pages-deploy-action@v4.6.0
