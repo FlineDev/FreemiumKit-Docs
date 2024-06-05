@@ -39,7 +39,6 @@ jobs:
             generate-documentation --target FreemiumKit \
             --disable-indexing \
             --transform-for-static-hosting \
-            --hosting-base-path FreemiumKit-Docs \
             --output-path ./docs
       
       - name: Deploy to Pages
