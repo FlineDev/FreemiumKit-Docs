@@ -23,7 +23,7 @@ FreemiumKit is the ultimate solution for Apple platform developers to integrate 
 
 ### Quick Setup
 - **Automated Creation:** FreemiumKit connects to App Store Connect on your behalf and automates all the steps needed to create your products, saving you a lot of click & wait.
-- **Customizable Paywalls:** The SDK contains a paywall UI engine for all Apple platforms with beautiful, proven, and ready-to-use designs.
+- **Customizable Paywalls:** The SDK contains a paywall UI engine for all Apple platforms with beautiful, localized, and ready-to-use designs.
 - **Remote Configuration:** Manage and update paywalls remotely through the native app – on your Mac or even on your iPhone!
 
 ![Feature Image 1](path/to/feature-image1.png)
@@ -51,6 +51,7 @@ When choosing a solution for managing in-app purchases and subscriptions, it's i
 |--------------------------------|-------------------------------------------------------|--------------------------------|
 | **Quick Setup**                | ✅ (automated creation of products on Connect)        | ❌                             |
 | **Paywalls**                   | ✅ (on all Apple Platforms, even visionOS!)           | 🚧 (only iOS)                  |
+| **Localization**               | ✅ (paywalls localized to ~40 languages)              | ❌                             |
 | **Real-Time Notifications**    | ✅ (push notifications sent to native iPhone app)     | ❌ (only webhooks)             |
 | **Skip Renewal Notifications** | ✅ (reports purchases & **new** subscriptions)        | ❌                             |
 | **Receipt Validation**         | ✅ (using StoreKit 2)                                 | ✅                             |
