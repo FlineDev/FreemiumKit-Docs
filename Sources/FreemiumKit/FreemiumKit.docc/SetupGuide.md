@@ -54,6 +54,8 @@ Learn how to set up your app for our paywalls and live push notifications.
 
 ## Showing the Paywalls
 
+@Video(poster: "PaidViews-Poster", source: "PaidViews")
+
 1. Lock your paid features for users who have not made a purchase yet by using one of the built-in views `PaidFeatureButton` or `PaidFeatureView`. For example:
 
    ```swift
@@ -73,7 +75,6 @@ Learn how to set up your app for our paywalls and live push notifications.
    ```
 
    Note that both `PaidFeatureButton` and `PaidFeatureView` accept an `unlocksAtTier` parameter of type `Int` (default: `1`) and a `showPaywallOnPressIfLocked` parameter of type `Bool` (default: `true`). This leads to a default behavior of unlocking the feature only if tier 1 is purchased and showing a paywall on press if tier 1 is not yet purchased. If `showPaywallOnPressIfLocked` is set to `false`, the locked view will not have any automatic interaction, just rendering locked view state as-is without any added behavior.
-   
 
 1. Alternatively, if you want to control the presentation of the paywall manually, you can add the `.paywall(isPresented:)` modifier to your custom views where needed. For example:
 

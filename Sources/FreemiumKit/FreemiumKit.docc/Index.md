@@ -13,39 +13,52 @@ Automation, Paywalls, A/B Testing, Live Notifications, PPP, and more.
 
 ## Overview
 
-![FreemiumKit Logo](path/to/logo.png)
+![FreemiumKit Logo](FreemiumKit-Lettering)
 
 FreemiumKit is the ultimate solution for Apple platform developers to integrate and manage in-app purchases and subscriptions effortlessly. With support for all Apple platforms, FreemiumKit provides a seamless and efficient way to handle your app's monetization.
 
-![Hero Image](path/to/hero-image.png)
-
 ## Key Features
 
-### Quick Setup
-- **Automated Creation:** FreemiumKit connects to App Store Connect on your behalf and automates all the steps needed to create your products, saving you a lot of click & wait.
-- **Customizable Paywalls:** The SDK contains a paywall UI engine for all Apple platforms with beautiful, localized, and ready-to-use designs.
-- **Remote Configuration:** Manage and update paywalls remotely through the native app – on your Mac or even on your iPhone!
+### One-Click Creation of Monthly/Yearly/Lifetime
 
-![Feature Image 1](path/to/feature-image1.png)
+- **Connect API Integration**: FreemiumKit connects to App Store Connect on your behalf to automate all the steps needed to create your products, saving you a lot of click & wait.
+- **Automatic Pricing**: We even calculate the prices for longer periods by default based on your Monthly price in a sensible manner, giving you full control when needed.
+- **Combined Review Note**: The review note updates for all of Monthly/Yearly/Lifetime at once.
 
-### Advanced Monetization Tools
-- **A/B Testing:** Optimize your paywalls and pricing with built-in A/B testing capabilities. Compare up to 4 paywall designs!
-- **Live Purchase Push Notifications:** Receive real-time notifications for user purchases to stay on top of your app's performance.
-- **Pricing by Purchase Power Parity:** Adjust pricing based on the user's location to maximize revenue and accessibility.
+@Video(poster: "QuickSetup-Poster", source: "QuickSetup")
 
-![Feature Image 2](path/to/feature-image2.png)
+### Configurable Paywalls
 
-### Native Experience
-- **Full Apple Platforms Support:** Seamlessly integrate the SDK with iOS, macOS, visionOS, and tvOS.
-- **Simplified Usage:** The native-first approach ensures an easy and efficient setup process, allowing you to focus on building your app.
-- **Privacy by Design:** The SDK avoids sending personal user data to any servers. And we don't keep your purchase data on our servers.
+- **Paywalls**: Our SDK contains beautiful & localized paywall designs for all Apple platforms.
+- **Remote Config**: Paywalls update immediately so you don't need to wait a new app version.
+- **A/B Testing**: Improve your conversion by comparing up to 4 designs in parallel.
+   
+@Video(poster: "Paywalls-Poster", source: "Paywalls")
 
-![Feature Image 3](path/to/feature-image3.png)
+
+### Flexible Pricing Adjustments
+
+- **Purchase Power Parity:** Adjust prices based on country to maximize revenue & accessibility.
+- **A/B Testing:** Automatically creates subscription groups so you can test different prices!
+
+
+@Row {
+   @Column(size: 2) {
+      ### Native Experience
+      - **Full Apple Platforms Support:** Seamlessly integrate the SDK with iOS, macOS, visionOS, and tvOS.
+      - **Live Purchase Push Notifications:** Receive real-time notifications for user purchases to stay on top of your app's performance.
+      - **Privacy by Design:** The SDK avoids sending personal user data to any servers. And we don't keep your purchase data on our servers.
+   }
+   
+   @Column {
+      ![Push Notifications](PushNotifications)
+   }
+}
 
 
 ## FreemiumKit vs. RevenueCat
 
-When choosing a solution for managing in-app purchases and subscriptions, it's important to understand the differences between FreemiumKit and RevenueCat.
+Many people in our community love 😻 RevenueCat, so you might wonder how FreemiumKit compares. The following table should explain why I've built FreemiumKit in the first place:
 
 | Feature                        | FreemiumKit                                           | RevenueCat                     |
 |--------------------------------|-------------------------------------------------------|--------------------------------|
@@ -54,7 +67,7 @@ When choosing a solution for managing in-app purchases and subscriptions, it's i
 | **Built-In Localization**      | ✅ (paywalls localized to ~40 languages)              | ❌                             |
 | **Real-Time Notifications**    | ✅ (push notifications sent to native iPhone app)     | ❌ (only webhooks)             |
 | **Skip Renewal Notifications** | ✅ (reports purchases & **new** subscriptions)        | ❌                             |
-| **Receipt Validation**         | ✅ (using StoreKit 2)                                 | ✅                             |
+| **Verified Transactions**      | ✅ (using StoreKit 2)                                 | ✅                             |
 | **A/B Testing**                | ✅ (fast setup, up to 4 designs in parallel)          | ✅ (but a lot of work)         |
 | **Native App**                 | ✅ (on all Apple Platforms)                           | ❌                             |
 | **Purchases Dashboard**        | ✅ (in native app)                                    | ✅ (only Web)                  |
@@ -70,7 +83,7 @@ When choosing a solution for managing in-app purchases and subscriptions, it's i
 
 ## Pricing
 
-FreemiumKit is **completely free to use** at the moment for everyone.
+FreemiumKit is **completely free to use** at the moment for _everyone_.
 
 In the future, only developers with more than $500 monthly income on App Store Connect will need to pay, and always less than 1% of their proceeds. The full planned pricing table:
 
