@@ -149,6 +149,7 @@ The top 5 most frequently asked questions:
    - <doc:FAQ-HowItWorks>
    - <doc:FAQ-Privacy>
    - <doc:FAQ-Validation>
+   - <doc:FAQ-Pricing>
 }
 
 Visit the [Frequently Asked Questions](doc:FAQs) page for the full list of questions & answers.
