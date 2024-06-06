@@ -7,7 +7,7 @@ Automation, Paywalls, A/B Testing, Live Notifications, PPP, and more.
    @TechnologyRoot
    @PageImage(purpose: icon, source: "FreemiumKit")
    @TitleHeading("Welcome to")
-   @CallToAction(url: "mailto:beta@fline.dev?subject=FreemiumKit", purpose: link, label: "📧 Register for Beta")
+   @CallToAction(url: "mailto:beta@fline.dev?subject=FreemiumKit&body=Register", purpose: link, label: "📧 Register for Beta")
 }
 
 
