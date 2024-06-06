@@ -7,7 +7,7 @@ Automation, Paywalls, A/B Testing, Live Notifications, PPP, and more.
    @TechnologyRoot
    @PageImage(purpose: icon, source: "FreemiumKit")
    @TitleHeading("Welcome to")
-   @CallToAction(url: "mailto:beta@fline.dev?subject=FreemiumKit&body=Register", purpose: link, label: "📧 Register for Beta")
+   @CallToAction(url: "mailto:beta@fline.dev?subject=FreemiumKit&body=Register", purpose: link, label: "📧 Register for the Beta")
 }
 
 
@@ -30,7 +30,7 @@ FreemiumKit is the ultimate solution for Apple platform developers to integrate 
 ### Configurable Paywalls
 
 - **Paywalls**: Our SDK contains beautiful & localized paywall designs for all Apple platforms.
-- **Remote Config**: Paywalls update immediately so you don't need to wait a new app version.
+- **Remote Config**: Paywalls update immediately so you don't need to wait for a new app version.
 - **A/B Testing**: Improve your conversion by comparing up to 4 designs in parallel.
    
 @Video(poster: "Paywalls-Poster", source: "Paywalls")
