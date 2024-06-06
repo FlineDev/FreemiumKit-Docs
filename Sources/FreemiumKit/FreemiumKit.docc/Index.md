@@ -51,7 +51,7 @@ When choosing a solution for managing in-app purchases and subscriptions, it's i
 |--------------------------------|-------------------------------------------------------|--------------------------------|
 | **Quick Setup**                | ✅ (automated creation of products on Connect)        | ❌                             |
 | **Paywalls**                   | ✅ (on all Apple Platforms, even visionOS!)           | 🚧 (only iOS)                  |
-| **Localization**               | ✅ (paywalls localized to ~40 languages)              | ❌                             |
+| **Built-In Localization**      | ✅ (paywalls localized to ~40 languages)              | ❌                             |
 | **Real-Time Notifications**    | ✅ (push notifications sent to native iPhone app)     | ❌ (only webhooks)             |
 | **Skip Renewal Notifications** | ✅ (reports purchases & **new** subscriptions)        | ❌                             |
 | **Receipt Validation**         | ✅ (using StoreKit 2)                                 | ✅                             |
