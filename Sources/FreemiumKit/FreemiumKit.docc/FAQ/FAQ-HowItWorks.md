@@ -22,7 +22,7 @@ This lead to the following current tech stack:
 - Native apps for iOS, macOS, and visionOS (tvOS has no biometric authentication)
 - App connects to official [App Store Connect API](https://developer.apple.com/documentation/appstoreconnectapi/) endpoints to handle purchases
 - [SwiftUI](https://developer.apple.com/xcode/swiftui/) SDK targeting iOS, macOS, visionOS, and tvOS (watchOS is not a destination)
-- SDK is built on top of [StoreKit 2](https://developer.apple.com/storekit/) and SwiftUI 3 (supporting iOS/tvOS 15+, macOS 12+)
+- SDK is built on top of [StoreKit 2](https://developer.apple.com/storekit/) and SwiftUI 3 (supporting iOS/tvOS 15+, macOS 12+, visionOS 1+)
 - [Vapor](https://vapor.codes)-based server for push notifications when purchases are made (reported by SDK)
 - [Supabase](https://supabase.com)-based Content Delivery Network (CDN) for remote configuration of paywalls
 - [CloudKit](https://developer.apple.com/icloud/cloudkit/)-based persistence of purchase history in your Apple Account for backup & sync
