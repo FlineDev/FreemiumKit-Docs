@@ -13,22 +13,22 @@ Learn how to set up your app for our paywalls and live push notifications.
 
 1. Open your app project in Xcode.
 
-1. In the "File" menu select "Add Package Dependencies…"
+2. In the "File" menu select "Add Package Dependencies…"
+   
+   @Image(source: "Setup-Add-Dependency")
 
-   // TODO: add screenshot
-
-1. Paste this to the top right text field and press "Add Package":
+3. Paste this to the top right text field and press "Add Package":
    ```
    https://github.com/FlineDev/FreemiumKit.git
    ```
 
    > Warning: During the current Beta phase, you need to specify the `main` branch for it to work.
 
-   // TODO: add screenshot
+   @Image(source: "Setup-Add-Package")
 
-1. Select your app target (if not already selected) and confirm by pressing "Add Package"
+4. Select your app target (if not already selected) and confirm by pressing "Add Package"
    
-   // TODO: add screenshot
+   @Image(source: "Setup-Choose-Package")
 
 
 ## Configuring the SDK
@@ -116,7 +116,7 @@ Learn how to set up your app for our paywalls and live push notifications.
    PaidStatusView(style: .decorative(icon: .laurel))
    ```
 
-   // TODO: add screenshot of both styles
+   @Image(source: "Setup-PaidStatusView")
 
    The `.decorative` style has multiple `icon` parameter options and also accepts optional `foregroundColor` and `backgroundColor` parameters if you need to adjust the defaults. Note that the `PaidStatusView` will automatically open a paywall on press if there's no purchase yet. Else, it's rendered as just a label without interaction.
 
