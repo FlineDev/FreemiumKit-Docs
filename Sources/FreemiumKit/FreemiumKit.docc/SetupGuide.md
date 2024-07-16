@@ -86,7 +86,7 @@ Learn how to set up your app for our paywalls and live push notifications.
          Button("Unlock Pro") {
             self.showPaywall = true
          }
-         .paywall(isPresent: self.$showPaywall)
+         .paywall(isPresented: self.$showPaywall)
       }
    }
    ```
@@ -103,7 +103,7 @@ Learn how to set up your app for our paywalls and live push notifications.
             Button("Unlock Pro") {
                self.showPaywall = true
             }
-            .paywall(isPresent: self.$showPaywall)
+            .paywall(isPresented: self.$showPaywall)
          }
       }
    }
