@@ -36,7 +36,7 @@ FreemiumKit is the ultimate solution for Apple platform developers to integrate 
 @Video(poster: "Paywalls-Poster", source: "Paywalls")
 
 
-### Flexible Pricing Adjustments
+### Flexible Pricing Adjustments (Coming Soon!)
 
 - **Purchase Power Parity:** Adjust prices based on country to maximize revenue & accessibility.
 - **A/B Testing:** Automatically creates subscription groups so you can test different prices!
@@ -45,7 +45,7 @@ FreemiumKit is the ultimate solution for Apple platform developers to integrate 
 @Row {
    @Column(size: 2) {
       ### Native Experience
-      - **Full Apple Platforms Support:** Seamlessly integrate the SDK with iOS, macOS, visionOS, and tvOS.
+      - **Full Apple Platforms Support:** Seamlessly integrate the SDK with iOS, macOS, visionOS, and tvOS (coming soon).
       - **Live Purchase Push Notifications:** Receive real-time notifications for user purchases to stay on top of your app's performance.
       - **Privacy by Design:** The SDK avoids sending personal user data to any servers. And we don't keep your purchase data on our servers.
    }
@@ -71,21 +71,19 @@ Many people in our community love 😻 RevenueCat, so you might wonder how Freem
 | **A/B Testing**                | ✅ (fast setup, up to 4 designs in parallel)          | ✅ (but a lot of work)         |
 | **Native App**                 | ✅ (on all Apple Platforms)                           | ❌                             |
 | **Purchases Dashboard**        | ✅ (in native app)                                    | ✅ (only Web)                  |
-| **Purchase Power Parity**      | ✅ (adjustable slider to mix with Apple prices)       | ❌                             |
+| **Purchase Power Parity (Soon!)**      | ✅ (adjustable slider to mix with Apple prices)       | ❌                             |
 | **Scalable**                   | ✅ (CDN for remote config, purchases in iCloud)       | ✅ (higher price)              |
 | **User Privacy**               | ✅ (no personal data sent, server temporary storage)  | ❌ (lots of data)              |
 | **Supports Apple Platforms**   | ✅ (including visionOS)                               | ✅ (including visionOS)        |
 | **Supports Android & Web**     | ❌                                                    | ✅                             |
 | **Pricing**                    | Freemium, paid tier **below 1%** of Revenue           | Freemium, paid tier exactly 1% of Revenue |
 
-> Tip: If you need RevenueCat for combined stats (with Android) or for their 3rd-party integrations, you can set RevenueCat to Observer mode and still use FreemiumKit for paywalls, live notifications etc.
-
 
 ## Pricing
 
 FreemiumKit is **completely free to use** at the moment for _everyone_.
 
-In the future, only developers with more than $500 monthly income on App Store Connect will need to pay, and always less than 1% of their proceeds. The full planned pricing table:
+In the future, only developers with more than $500 monthly income on App Store Connect will need to pay, and always less than 1% of their income. The full planned pricing table:
 
 @Row {
    @Column {
