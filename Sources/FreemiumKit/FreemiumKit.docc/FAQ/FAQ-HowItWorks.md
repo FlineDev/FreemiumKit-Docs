@@ -17,17 +17,17 @@ FreemiumKit is here to automate the cumbersome and fiddly steps in setting up an
 
 We will always try to support all Apple platforms you can choose as a destination for your target in Xcode and keep up with the latest OS releases. We will always prefer official APIs over private APIs and keep every dependency out that is not absolutely needed. This means, we stick to official Apple APIs wherever possible.
 
-This lead to the following current tech stack:
+This is the resulting current tech stack:
 
 - Native apps for iOS, macOS, and visionOS (tvOS has no biometric authentication)
 - App connects to official [App Store Connect API](https://developer.apple.com/documentation/appstoreconnectapi/) endpoints to handle purchases
-- [SwiftUI](https://developer.apple.com/xcode/swiftui/) SDK targeting iOS, macOS, visionOS, and tvOS (watchOS is not a destination)
+- [SwiftUI](https://developer.apple.com/xcode/swiftui/) SDK targeting iOS, macOS, visionOS, and tvOS (coming soon)
 - SDK is built on top of [StoreKit 2](https://developer.apple.com/storekit/) and SwiftUI 3 (supporting iOS/tvOS 15+, macOS 12+, visionOS 1+)
 - [Vapor](https://vapor.codes)-based server for push notifications when purchases are made (reported by SDK)
 - [Supabase](https://supabase.com)-based Content Delivery Network (CDN) for remote configuration of paywalls
 - [CloudKit](https://developer.apple.com/icloud/cloudkit/)-based persistence of purchase history in your Apple Account for backup & sync
 
-The only non-Apple technologies here are our server and CDN. We included these dependencies in a thoughtful manner – let's suppose both are down, then:
+The only non-Apple technologies here are our server and CDN. We included these dependencies in a thoughtful manner – let's suppose the worst case happens and both are offline, then:
 
 - ❌ You would no longer receive **live push notifications** when users make purchases
 - ❌ You would no longer be able to **remotely configure** your paywall or A/B test
