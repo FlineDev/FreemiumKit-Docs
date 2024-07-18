@@ -14,6 +14,7 @@ The most frequently asked questions about FreemiumKit.
 - <doc:FAQ-Privacy>
 - <doc:FAQ-Validation>
 - <doc:FAQ-Pricing>
+- <doc:FAQ-MigrateFromRevenueCat>
 
 
 ## Contact

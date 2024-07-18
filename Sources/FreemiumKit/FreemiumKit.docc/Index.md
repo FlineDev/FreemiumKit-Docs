@@ -148,6 +148,7 @@ The top 5 most frequently asked questions:
    - <doc:FAQ-Privacy>
    - <doc:FAQ-Validation>
    - <doc:FAQ-Pricing>
+   - <doc:FAQ-MigrateFromRevenueCat>
 }
 
 Visit the [Frequently Asked Questions](doc:FAQs) page for the full list of questions & answers.
