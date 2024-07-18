@@ -73,6 +73,7 @@ Many people in our community love 😻 RevenueCat, so you might wonder how Freem
 | **Purchases Dashboard**        | ✅ (in native app)                                    | ✅ (only Web)                  |
 | **Purchase Power Parity (Soon!)**      | ✅ (adjustable slider to mix with Apple prices)       | ❌                             |
 | **Scalable**                   | ✅ (CDN for remote config, purchases in iCloud)       | ✅ (higher price)              |
+| **Low App Size Impact**        | ✅ (3MB less than RevenueCat)                         | ❌                             |
 | **User Privacy**               | ✅ (no personal data sent, server temporary storage)  | ❌ (lots of data)              |
 | **Supports Apple Platforms**   | ✅ (including visionOS)                               | ✅ (including visionOS)        |
 | **Supports Android & Web**     | ❌                                                    | ✅                             |

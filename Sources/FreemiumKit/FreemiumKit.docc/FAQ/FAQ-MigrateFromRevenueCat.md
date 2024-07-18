@@ -61,6 +61,8 @@ This logic can be completely replaced by one of our 3 APIs explained in the 'Sho
 
 3. Our `PaidStatusView` is a special view that we pepared for use in places where you want to simply indicate the current paid status of the user. This is a common need in the settings screen of an app and usually inside a `Form` or `List` view. We recommend adding it if you don't have such a place yet as this serves also as a reminder for Free users that you have paid features they might be interested in.
 
+If you need global access to the current user's purchase status, you can call `FreemiumKit.shared.purchasedTier` from anywhwere in your app (e.g. in your models).
+
 Make sure your project builds before moving on to the next step.
 
 ### Step 4: Remove the RevenueCat SDK integration (5 min)
