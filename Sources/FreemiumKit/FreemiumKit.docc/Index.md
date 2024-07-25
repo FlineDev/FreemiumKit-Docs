@@ -130,7 +130,7 @@ Here's what customers are saying about FreemiumKit:
    @Column {
       ![Testimonial Image](path/to/testimonial-image.png)
       
-      > Jane Doe, Developer: FreemiumKit has transformed the way we handle in-app purchases. The setup was incredibly easy, and the features are exactly what we needed!
+      > Nicolo Stanciu, NFC.cool: Setting up in-app purchases and subscriptions is a tedious task, and FreemiumKit is a **huge time saver** by automating it. Once you try it, you will never go back!
    }
    
    @Column {
