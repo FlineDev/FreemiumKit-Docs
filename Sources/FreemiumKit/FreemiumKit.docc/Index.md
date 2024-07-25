@@ -113,7 +113,8 @@ In the future, only developers with more than $500 monthly income on App Store C
 
 Ready to take your app's monetization to the next level? Download FreemiumKit today and start experiencing the benefits of simplified and powerful in-app purchases & subscriptions.
 
-[Download Now](https://testflight.apple.com/join/AhTsftRv) (TestFlight)
+[Download Now](https://testflight.apple.com/join/AhTsftRv)
+[Download Now](https://testflight.apple.com/join/AhTsftRv)
 
 
 ## SDK Setup Guide
