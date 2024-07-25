@@ -56,7 +56,7 @@ Learn how to set up your app for our paywalls and live push notifications.
 
 @Video(poster: "PaidViews-Poster", source: "PaidViews")
 
-1. Recommended: Lock your paid features for users who have not made a purchase yet by using one of the built-in views `PaidFeatureButton` or `PaidFeatureView`. For example:
+1. Lock your paid features for users who have not made a purchase yet by using one of the built-in views `PaidFeatureButton` or `PaidFeatureView`. This is the recommended way of using the SDK (when applicable) as it handles purchase states automatically for you. For example:
 
    ```swift
    // opens paywall if user has not purchased, else works like a normal (stylable) button
@@ -93,7 +93,7 @@ Learn how to set up your app for our paywalls and live push notifications.
    }
    ```
 
-   If you want to conditionally hide views based on paid state (like hiding the unlock button if a user has already purchased), you can add the `FreemiumKit` object as an `@EnvironmentObject` and call `.purchasedTier` on it like so:
+   If you want to conditionally hide views based on paid state (like hiding the unlock button if a user has already purchased), you can add the `FreemiumKit` object as an `@EnvironmentObject` and call `.purchasedTier` (or `.hasPurchased` if you only have one tier) like so:
 
    ```swift
    import FreemiumKit
@@ -140,6 +140,8 @@ Learn how to set up your app for our paywalls and live push notifications.
       }
    }
    ```
+
+   Note that you can also access the `FreemiumKit` object from your models globally by calling `FreemiumKit.shared`. But in your SwiftUI views you should use the `@EnvironmentObject` so your views get updated correctly.
 
 1. There's also a `PaidStatusView` which you can add to your app's settings to indicate to users what their current purchase state is. There are two styles:
 
