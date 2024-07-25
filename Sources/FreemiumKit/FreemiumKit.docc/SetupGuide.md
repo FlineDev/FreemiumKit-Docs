@@ -38,6 +38,8 @@ Learn how to set up your app for our paywalls and live push notifications.
 1. Add a call to `.environmentObject(FreemiumKit.shared)` to every scene in the app entry point. For example:
 
    ```swift
+   import FreemiumKit
+
    @main
    struct MyApp: App {
       var body: some Scene {
@@ -54,7 +56,7 @@ Learn how to set up your app for our paywalls and live push notifications.
 
 @Video(poster: "PaidViews-Poster", source: "PaidViews")
 
-1. Lock your paid features for users who have not made a purchase yet by using one of the built-in views `PaidFeatureButton` or `PaidFeatureView`. For example:
+1. Recommended: Lock your paid features for users who have not made a purchase yet by using one of the built-in views `PaidFeatureButton` or `PaidFeatureView`. For example:
 
    ```swift
    // opens paywall if user has not purchased, else works like a normal (stylable) button
@@ -72,19 +74,21 @@ Learn how to set up your app for our paywalls and live push notifications.
    }
    ```
 
-   Note that both `PaidFeatureButton` and `PaidFeatureView` accept an `unlocksAtTier` parameter of type `Int` (default: `1`) and a `showPaywallOnPressIfLocked` parameter of type `Bool` (default: `true`). This leads to a default behavior of unlocking the feature only if tier 1 is purchased and showing a paywall on press if tier 1 is not yet purchased. If `showPaywallOnPressIfLocked` is set to `false`, the locked view will not have any automatic interaction, just rendering locked view state as-is without any added behavior.
+   Both `PaidFeatureButton` and `PaidFeatureView` accept an `unlocksAtTier` parameter of type `Int` (default: `1`) and a `showPaywallOnPressIfLocked` parameter of type `Bool` (default: `true`). This leads to a default behavior of unlocking the feature only if tier 1 is purchased and showing a paywall on press if tier 1 is not yet purchased. If `showPaywallOnPressIfLocked` is set to `false`, the locked view will not have any automatic interaction, just rendering locked view state as-is without any added behavior.
 
 1. Alternatively, if you want to control the presentation of the paywall manually, you can add the `.paywall(isPresented:)` modifier to your custom views where needed. For example:
 
    ```swift
+   import FreemiumKit
+
    struct MyView: View {
       @State var showPaywall: Bool = false
 
       var body: some View {
          Button("Unlock Pro") {
-            self.showPaywall = true
+            showPaywall = true
          }
-         .paywall(isPresented: self.$showPaywall)
+         .paywall(isPresented: $showPaywall)
       }
    }
    ```
@@ -92,16 +96,46 @@ Learn how to set up your app for our paywalls and live push notifications.
    If you want to conditionally hide views based on paid state (like hiding the unlock button if a user has already purchased), you can add the `FreemiumKit` object as an `@EnvironmentObject` and call `.purchasedTier` on it like so:
 
    ```swift
+   import FreemiumKit
+
    struct MyView: View {
       @EnvironmentObject var freemiumKit: FreemiumKit
       @State var showPaywall: Bool = false
 
       var body: some View {
-         if self.freemiumKit.purchasedTier == nil {
+         if freemiumKit.purchasedTier == nil {
             Button("Unlock Pro") {
-               self.showPaywall = true
+               showPaywall = true
             }
-            .paywall(isPresented: self.$showPaywall)
+            .paywall(isPresented: $showPaywall)
+         }
+      }
+   }
+   ```
+
+   If you want to show the paywall right upon appearance of a view, you should additionally check for the `purchasesLoaded` property of the environment object like so:
+
+   ```swift
+   import FreemiumKit
+
+   struct MyView: View {
+      @EnvironmentObject private var freemiumKit: FreemiumKit
+      @State var showPaywall: Bool = false
+
+      var body: some View {
+         VStack {
+            // your view ...
+         }
+         .paywall(isPresented: $showPaywall)
+         .onAppear {
+            if freemiumkit.purchasesLoaded, freemiumkit.purchasedTier = nil {
+               showPaywall = true
+            }
+         }
+         .onChange(of: freemiumKit.purchasesLoaded) {
+            if freemiumkit.purchasesLoaded, freemiumkit.purchasedTier = nil {
+               showPaywall = true
+            }
          }
       }
    }
@@ -138,7 +172,6 @@ If you want to simulate a specific paid state in your previews, you can call the
       .environmentObject(FreemiumKit.preview.withDebugOverrides(purchasedTier: 1))
 }
 ```
-
 
 
 ## Contact
