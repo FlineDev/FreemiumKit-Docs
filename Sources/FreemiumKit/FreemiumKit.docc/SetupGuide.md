@@ -51,7 +51,7 @@ Learn how to set up your app for our paywalls and live push notifications.
    }
    ```
    
-> Tip: If you want to disable the paywall during DEBUG builds after you've made sure that it works as expected, you can append `.withDebugOverrides(purchasedTier: 1)` to `FreemiumKit.shared`. 
+> Tip: If you want to disable the paywall during DEBUG builds after you've made sure that it works as expected, you can call `.withOverridesForDebug(purchasedTier: 1)` on `FreemiumKit.shared` within an `#if DEBUG` check.
 
 ## Showing the Paywalls
 
@@ -167,12 +167,12 @@ For SwiftUI previews to work where you make use of the built-in views or modifie
 }
 ```
 
-If you want to simulate a specific paid state in your previews, you can call the `withDebugOverrides(purchasedTier:)` function on `FreemiumKit.preview` and set your desired tier (set `1` for full access). The default `FreemiumKit.preview` shows in the "nothing purchased" state, showcasing how things will look from a Free users perspective. For example:
+If you want to simulate a specific paid state in your previews, you can call the `withOverridesForDebug(purchasedTier:)` function on `FreemiumKit.preview` and set your desired tier (set `1` for full access). The default `FreemiumKit.preview` shows in the "nothing purchased" state, showcasing how things will look from a Free users perspective. For example:
 
 ```swift
 #Preview("Full Access") {
    YourView()
-      .environmentObject(FreemiumKit.preview.withDebugOverrides(purchasedTier: 1))
+      .environmentObject(FreemiumKit.preview.withOverridesForDebug(purchasedTier: 1))
 }
 ```
 
