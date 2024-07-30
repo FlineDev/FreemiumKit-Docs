@@ -50,7 +50,8 @@ Learn how to set up your app for our paywalls and live push notifications.
       }
    }
    ```
-
+   
+> Tip: If you want to disable the paywall during DEBUG builds after you've made sure that it works as expected, you can append `.withDebugOverrides(purchasedTier: 1)` to `FreemiumKit.shared`. 
 
 ## Showing the Paywalls
 
