@@ -17,6 +17,8 @@ Automation, Paywalls, A/B Testing, Live Notifications, PPP, and more.
 
 FreemiumKit is the ultimate solution for Apple platform developers to integrate and manage in-app purchases and subscriptions effortlessly. With support for all Apple platforms, FreemiumKit provides a seamless and efficient way to handle your app's monetization.
 
+> Tip: Install the Mac app first for a smooth onboarding experience.
+
 ## Key Features
 
 ### One-Click Creation of Monthly/Yearly/Lifetime
