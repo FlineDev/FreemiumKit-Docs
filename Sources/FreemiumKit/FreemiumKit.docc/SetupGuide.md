@@ -129,12 +129,12 @@ Learn how to set up your app for our paywalls and live push notifications.
          }
          .paywall(isPresented: $showPaywall)
          .onAppear {
-            if freemiumkit.purchasesLoaded, freemiumkit.purchasedTier = nil {
+            if freemiumkit.purchasesLoaded, freemiumkit.purchasedTier == nil {
                showPaywall = true
             }
          }
          .onChange(of: freemiumKit.purchasesLoaded) {
-            if freemiumkit.purchasesLoaded, freemiumkit.purchasedTier = nil {
+            if freemiumkit.purchasesLoaded, freemiumkit.purchasedTier == nil {
                showPaywall = true
             }
          }
