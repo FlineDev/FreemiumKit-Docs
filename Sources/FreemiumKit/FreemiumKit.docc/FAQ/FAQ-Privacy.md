@@ -7,7 +7,6 @@ Learn how FreemiumKit was designed to keep your users data private and reduce th
    @PageKind(sampleCode)
 }
 
-
 ## Short Answer
 
 We don't send any personal user data to our servers, respecting user privacy. And we delete purchase data from our servers as soon as they are fetched to your devices. Your purchase data is persisted via CloudKit. This ensures we can't access your purchase history.

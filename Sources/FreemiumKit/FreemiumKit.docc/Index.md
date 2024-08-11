@@ -149,10 +149,10 @@ The top 5 most frequently asked questions:
 
 @Links(visualStyle: list) {
    - <doc:FAQ-HowItWorks>
-   - <doc:FAQ-Privacy>
    - <doc:FAQ-Validation>
    - <doc:FAQ-Pricing>
    - <doc:FAQ-MigrateFromRevenueCat>
+   - <doc:FAQ-MigrateFromPaidUpFront>
 }
 
 Visit the [Frequently Asked Questions](doc:FAQs) page for the full list of questions & answers.
