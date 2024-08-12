@@ -29,11 +29,11 @@ This is the resulting current tech stack:
 
 The only non-Apple technologies here are our server and CDN. We included these dependencies in a thoughtful manner – let's suppose the worst case happens and both are offline, then:
 
-- ❌ You would no longer receive **live push notifications** when users make purchases
-- ❌ You would no longer be able to **remotely configure** your paywall or A/B test
-- ✅ The Paywall UI would continue to work, using the local "fallback" configuration
-- ✅ Users can continue to make purchases, as the SDK only needs StoreKit 2 for that
-- ✅ Even paying users will continue to have access to paid features (via StoreKit 2)
+- ❌ You would no longer receive **live push notifications** when users make purchases (not mission-critical)
+- ❌ You would no longer be able to **remotely configure** your paywall or A/B test (not mission-critical)
+- ✅ The **Paywall** UI would continue to work, using the local "fallback" configuration
+- ✅ Users can continue to **make purchases**, as the SDK only needs StoreKit 2 for that
+- ✅ Even paying users will continue to **have access to paid features** (via StoreKit 2)
 
 Of course, we don't expect our servers to be down any significant amount of time. This was just to show you that we have considered all cases when designing FreemiumKit conceptually. And because all the purchases are directly configured on App Store Connect, you could even decide to move away from FreemiumKit entirely if you find our feature set does not fulfill your needs. There are no lock-in features. But beware, you will miss all our built-in conveniences! 😉
 
