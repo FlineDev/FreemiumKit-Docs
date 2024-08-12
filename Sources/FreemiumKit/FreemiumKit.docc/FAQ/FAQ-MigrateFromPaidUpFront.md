@@ -45,9 +45,13 @@ struct AwesomeApp: App {
 
 ### Step 3: Submit a new version & make your app free
 
-Once everything is ready and tested, submit your app to the App Store and set it to "Manually release this version". Once your update is approved, release your version and immediatelz after that set your app pricing to "Free". This will ensure that no one can download your previous (paid) version for free but also no one has to pay for the new Freemium version. The order is important here.
+Once everything is ready and tested, submit your app to the App Store and set it to "Manually release this version". Once your update is approved, release your version and immediately after that set your app pricing to "Free". This will ensure that no one can download your previous (paid) version for free but also no one has to pay for the new Freemium version. The order is important here.
 
-Thats't it, you successfully migrated your paid app to the Freemium model!
+That's it, you successfully migrated your paid app to the Freemium model!
+
+The FreemiumKit SDK will automatically treat any users who had paid for your app previously like someone who purchased your highest tier for Lifetime. This means calls to APIs like `PaidFeatureButton`, `purchasedTier` or `hasPurchased` will behave like for an active subscriber. 🎉
+
+> Tip: If you want to particularly know if the current user is a paid-up-front puchaser who upgraded (e.g. to give them extras like an 'Early Adopter' badge), you can call `hasUpgradedFromPaidRelease` on `FreemiumKit.shared` or on the FreemiumKit `@EnvironmentObject`.
 
 ## Contact
 
