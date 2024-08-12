@@ -37,9 +37,11 @@ struct AwesomeApp: App {
 }
 ```
 
-> Warning: The `AppTransaction` API Apple offers to detect the first downloaded app version returns the version (e.g. `1.5.1`) on the macOS platform but the build number (e.g. `25`) on all other platforms, including iOS. But only on macOS of all platforms (where it's not relevant) Apple requires new versions to have a _higher_ build number, but not on iOS, for example. As long as you increase the version number (e.g. from `1.5.1` to `1.5.2`) you can always go back to build number `1` even if you were at build `25` in version `1.5.1`.
+> Warning: The `AppTransaction` API Apple offers to detect the first downloaded app version returns the version (e.g. `1.5.1`) on macOS but the build number (e.g. `25`) on all other platforms, including iOS. But only on macOS of all platforms (where it's not relevant) Apple requires new versions to have a _higher_ build number, but not on iOS, for example. As long as you increase the version number (e.g. from `1.5.1` to `1.5.2`) you can always go back to build number `1` even if you were at build `25` in version `1.5.1`.
 >
 > So for this check to work, make sure to **always** increase your build number from now on if you haven't already. Also, if you had been resetting your build number to `1` in the past, make sure to pass the highest build number you've ever shipped your app with when calling `lastPaidRelease(version:buildNum:)` and start with the next number for your future releases. E.g. if `5` was your latest released build number, but you had a version with build `25` in the past, pass `25` for the `buildNum` and start your build number at `26` for your next release.
+>
+> If it takes too long to figure out which was the highest build number, just pick a number that's sure to be higher than the highest build number so far (e.g. `500`) and start from there.
 
 ### Step 3: Submit a new version & make your app free
 
