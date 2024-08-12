@@ -37,6 +37,10 @@ struct AwesomeApp: App {
 }
 ```
 
+> Warning: The `AppTransaction` API Apple offers to detect the first downloaded app version returns the version (e.g. `1.5.1`) on the macOS platform but the build number (e.g. `25`) on all other platforms, including iOS. But only on macOS of all platforms (where it's not relevant) Apple requires new versions to have a _higher_ build number, but not on iOS, for example. As long as you increase the version number (e.g. from `1.5.1` to `1.5.2`) you can always go back to build number `1` even if you were at build `25` in version `1.5.1`.
+>
+> So for this check to work, make sure to **always** increase your build number from now on if you haven't already. Also, if you had been resetting your build number to `1` in the past, make sure to pass the highest build number you've ever shipped your app with when calling `lastPaidRelease(version:buildNum:)` and start with the next number for your future releases. E.g. if `5` was your latest released build number, but you had a version with build `25` in the past, pass `25` for the `buildNum` and start your build number at `26` for your next release.
+
 ### Step 3: Submit a new version & make your app free
 
 Once everything is ready and tested, submit your app to the App Store and set it to "Manually release this version". Once your update is approved, release your version and immediatelz after that set your app pricing to "Free". This will ensure that no one can download your previous (paid) version for free but also no one has to pay for the new Freemium version. The order is important here.
