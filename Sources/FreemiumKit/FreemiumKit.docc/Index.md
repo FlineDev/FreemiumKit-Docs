@@ -138,7 +138,7 @@ Here's what customers are saying about FreemiumKit:
    @Column {
       ![Testimonial Image](path/to/testimonial-image.png)
       
-      > Jane Doe, Developer: FreemiumKit has transformed the way we handle in-app purchases. The setup was incredibly easy, and the features are exactly what we needed!
+      > Seou Hounkanrin, Glu Sight: The setup is **unbelievably simple** and way faster to get going than any other solution I've tried. The SDK documentation is crystal clear! It comes packed with smart automation that work flawlessly out of the box, plus the flexibility to tailor it to your needs. And the support from the developers? Stellar!
    }
 }
 
