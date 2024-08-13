@@ -9,7 +9,7 @@ Learn why you can trust FreemiumKit to scale with your app and why there's no lo
 
 ## Short Answer
 
-FreemiumKit is built on top of StoreKit 2 and official App Store Connect APIs. Therefore, most of what FreemiumKit does is following modern Apple best practices, without being dependent on our servers. For the paywall remote configuration, we use a Content Delivery Network (CN) for fast global distribution – but there's also a local fallback in your project, in case of downtimes.
+FreemiumKit is built on top of StoreKit 2 and official App Store Connect APIs. Therefore, most of what FreemiumKit does is following modern Apple best practices, without being dependent on our servers. For the paywall remote configuration, we use a Content Delivery Network (CDN) for fast global distribution – but there's also a local fallback in your project, in case of downtimes.
 
 ## Full Answer
 
