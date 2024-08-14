@@ -155,6 +155,19 @@ Learn how to set up your app for our paywalls and live push notifications.
 
    The `.decorative` style has multiple `icon` parameter options and also accepts optional `foregroundColor` and `backgroundColor` parameters if you need to adjust the defaults. Note that the `PaidStatusView` will automatically open a paywall on press if there's no purchase yet. Else, it's rendered as just a label without interaction.
 
+   If you place it inside a `Form` with `Sections`, you might want to set the `listRowBackground` for a clean look like this:
+
+   ```swift
+   Form {
+      Section {
+         PaidStatusView(style: .decorative(icon: .laurel))
+            .listRowBackground(Color.accentColor)
+      }
+      
+      // ...
+   }
+   ```
+
 
 ## SwiftUI Previews
 
