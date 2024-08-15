@@ -114,7 +114,7 @@ But if you want to support multiple levels of access to your app, like a combina
    }
    ```
 
-   If you want to conditionally hide views based on paid state (like hiding the unlock button if a user has already purchased), you can add the `FreemiumKit` object as an `@EnvironmentObject` and call `.purchasedTier` (or `.hasPurchased` if you only have one tier) like so:
+   If you want to conditionally hide views based on paid state (like hiding the unlock button if a user has already purchased), you can add the `FreemiumKit` object as an `@EnvironmentObject` and call `.purchasedTier` or `.hasPurchased` if you only have one tier like so:
 
    ```swift
    import FreemiumKit
@@ -134,13 +134,12 @@ But if you want to support multiple levels of access to your app, like a combina
    }
    ```
 
-   If you want to show the paywall right upon appearance of a view, you should additionally check for the `purchasesLoaded` property of the environment object like so:
+   If you want to show the paywall upon appearance of a view if a user has not paid, you should first check that the `purchasesLoaded` property of `FreemiumKit` is `true` – or else paying users might see the paywall, too. Since this is a common use case, our SDK ships with the `.onPurchasesLoaded` view modifier which is guaranteed to be called exactly once (like `.onAppear`) but only when purchases are loaded:
 
    ```swift
    import FreemiumKit
 
    struct MyView: View {
-      @EnvironmentObject private var freemiumKit: FreemiumKit
       @State var showPaywall: Bool = false
 
       var body: some View {
@@ -148,21 +147,14 @@ But if you want to support multiple levels of access to your app, like a combina
             // your view ...
          }
          .paywall(isPresented: $showPaywall)
-         .onAppear {
-            if freemiumkit.purchasesLoaded, freemiumkit.purchasedTier == nil {
-               showPaywall = true
-            }
-         }
-         .onChange(of: freemiumKit.purchasesLoaded) {
-            if freemiumkit.purchasesLoaded, freemiumkit.purchasedTier == nil {
+         .onPurchasesLoaded {
+            if !FremiumKit.shared.hasPurchased {
                showPaywall = true
             }
          }
       }
    }
    ```
-
-   Note that you can also access the `FreemiumKit` object from your models globally by calling `FreemiumKit.shared`. But in your SwiftUI views you should use the `@EnvironmentObject` so your views get updated correctly.
 
 1. There's also a `PaidStatusView` which you can add to your app's settings to indicate to users what their current purchase state is. There are two styles:
 
