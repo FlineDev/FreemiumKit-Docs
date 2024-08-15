@@ -51,7 +51,19 @@ Learn how to set up your app for our paywalls and live push notifications.
    }
    ```
    
-> Tip: If you want to disable the paywall during DEBUG builds after you've made sure that it works as expected, you can call `.withOverridesForDebug(purchasedTier: 1)` on `FreemiumKit.shared` within an `#if DEBUG` check.
+> Tip: If you want to disable the paywall during DEBUG builds after you've made sure that it works as expected, you can call `.overrideForDebug` on `FreemiumKit.shared` within an `#if DEBUG` check like this:
+>
+> ```swift
+> WindowGroup {
+>    MainView()
+>       .onAppear {
+>          #if DEBUG
+>          FreemiumKit.shared.overrideForDebug(purchasedTier: 1)
+>          #endif
+>       }
+> }
+> .environmentObject(FreemiumKit.shared)
+> ```
 
 ## Showing the Paywalls
 
