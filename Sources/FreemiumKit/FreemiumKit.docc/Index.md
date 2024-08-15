@@ -7,7 +7,7 @@ Automation, Paywalls, A/B Testing, Live Notifications, PPP, and more.
    @TechnologyRoot
    @PageImage(purpose: icon, source: "FreemiumKit")
    @TitleHeading("Welcome to")
-   @CallToAction(url: "https://testflight.apple.com/join/AhTsftRv", purpose: link, label: "Get it Now")
+   @CallToAction(url: "https://apps.apple.com/app/apple-store/id6502914189?pt=549314&ct=freemiumkit.app&mt=8", purpose: link, label: "Get it Now")
 }
 
 
@@ -115,8 +115,8 @@ In the future, only developers with more than $500 monthly income on App Store C
 
 Ready to take your app's monetization to the next level? Download FreemiumKit today and start experiencing the benefits of simplified and powerful in-app purchases & subscriptions.
 
-[Download Now](https://testflight.apple.com/join/AhTsftRv)
-[Download Now](https://testflight.apple.com/join/AhTsftRv)
+[Download Now](https://apps.apple.com/app/apple-store/id6502914189?pt=549314&ct=freemiumkit.app&mt=8)
+[Download Now](https://apps.apple.com/app/apple-store/id6502914189?pt=549314&ct=freemiumkit.app&mt=8)
 
 
 ## SDK Setup Guide
