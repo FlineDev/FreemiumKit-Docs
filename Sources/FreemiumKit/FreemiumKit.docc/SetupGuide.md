@@ -67,7 +67,7 @@ Learn how to set up your app for our paywalls and live push notifications.
 
 ## Understanding Apples Tier System
 
-If your goal is to ship your app with any combination of Monthly, Yearly, and Lifetime purchases, you most likely only need only one tier: Tier 1. Just pass `1` for the `purchasedTier` parameter everywhere – easy. Continue to the next section.
+If your goal is to ship your app with any combination of Monthly, Yearly, and Lifetime purchases, you most likely only need one tier: Tier 1. Just pass `1` for the `purchasedTier` parameter everywhere – easy. Continue to the next section.
 
 But if you want to support multiple levels of access to your app, like a combination of Monthly/Yearly/Lifetime for the 'Pro' level, another combination of Monthly/Yearly/Lifetime for the 'Max' level, and maybe another combination of Monthly/Yearly/Lifetime for the 'Ultra' level, that's when you need to think about which value to pass to the `purchasedTier` parameter. Note that `1` always refers to the highest level. That's how Apple has decided their tier system to work. Read their [official docs](https://developer.apple.com/help/app-store-connect/manage-subscriptions/offer-auto-renewable-subscriptions) to learn more.
 
