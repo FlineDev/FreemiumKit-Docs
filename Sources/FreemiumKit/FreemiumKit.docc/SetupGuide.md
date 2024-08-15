@@ -35,7 +35,7 @@ Learn how to set up your app for our paywalls and live push notifications.
 
 1. Make sure your app's Asset Catalog contains the `FreemiumKit` data set from the "Setup" tab of your app in FreemiumKit for Mac. If it doesn't, drag & drop it from the Setup tab now.
 
-1. Add a call to `.environmentObject(FreemiumKit.shared)` to every scene in the app entry point. For example:
+1. Add a call to `.environmentObject(FreemiumKit.shared)` to the root view of every scene in the app entry point. For example:
 
    ```swift
    import FreemiumKit
@@ -45,8 +45,8 @@ Learn how to set up your app for our paywalls and live push notifications.
       var body: some Scene {
          WindowGroup {
             MainView()
+               .environmentObject(FreemiumKit.shared)
          }
-         .environmentObject(FreemiumKit.shared)
       }
    }
    ```
@@ -61,8 +61,9 @@ Learn how to set up your app for our paywalls and live push notifications.
 >          FreemiumKit.shared.overrideForDebug(purchasedTier: 1)
 >          #endif
 >       }
+>       .environmentObject(FreemiumKit.shared)
 > }
-> .environmentObject(FreemiumKit.shared)
+
 > ```
 
 ## Understanding Apples Tier System
