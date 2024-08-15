@@ -69,15 +69,15 @@ Learn how to set up your app for our paywalls and live push notifications.
 
 @Video(poster: "PaidViews-Poster", source: "PaidViews")
 
-1. Lock your paid features for users who have not made a purchase yet by using one of the built-in views `PaidFeatureButton` or `PaidFeatureView`. This is the recommended way of using the SDK (when applicable) as it handles purchase states automatically for you. For example:
+1. Lock your paid features for users who have not made a purchase yet by using one of the built-in views `PaidFeatureButton` or `PaidFeatureView`. This is the recommended way of using the SDK (when applicable) as it handles purchase states automatically for you and saves you a lot of boilerplate code. For example:
 
    ```swift
-   // opens paywall if user has not purchased, else works like a normal (stylable) button
+   // opens paywall if user has not purchased, else just like `Button`
    PaidFeatureButton("Export", systemImage: "square.and.arrow.up") {
       // your export logic – no check for a paid tier needed, only called if already purchased 
    }
 
-   // this one behaves exactly the same as the one above, but gives you more flexibility to change the unlocked/locked views
+   // exactly the same as above, but gives you full customizability
    PaidFeatureView {
       Button("Export", systemImage: "square.and.arrow.up") {
          // your export logic – no check for a paid tier needed, only called if already purchased
@@ -87,7 +87,9 @@ Learn how to set up your app for our paywalls and live push notifications.
    }
    ```
 
-   Both `PaidFeatureButton` and `PaidFeatureView` accept an `unlocksAtTier` parameter of type `Int` (default: `1`) and a `showPaywallOnPressIfLocked` parameter of type `Bool` (default: `true`). This leads to a default behavior of unlocking the feature only if tier 1 is purchased and showing a paywall on press if tier 1 is not yet purchased. If `showPaywallOnPressIfLocked` is set to `false`, the locked view will not have any automatic interaction, just rendering locked view state as-is without any added behavior.
+   Both `PaidFeatureButton` and `PaidFeatureView` accept an `unlocksAtTier` parameter of type `Int` (default: `1`) and a `showPaywallOnPressIfLocked` parameter of type `Bool` (default: `true`).
+
+   If you don't pass any of those parameters, the default behavior unlocks the feature only if tier 1 is purchased and shows a paywall on press if tier 1 is not yet purchased. If `showPaywallOnPressIfLocked` is set to `false`, the locked view will not have any automatic interaction, just rendering locked view state as-is without any added behavior.
 
 1. Alternatively, if you want to control the presentation of the paywall manually, you can add the `.paywall(isPresented:)` modifier to your custom views where needed. For example:
 
