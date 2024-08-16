@@ -60,7 +60,7 @@ FreemiumKit is the ultimate solution for Apple platform developers to integrate 
 
 ## FreemiumKit vs. RevenueCat
 
-Many people in our community love 😻 RevenueCat, so you might wonder how FreemiumKit compares. The following table should explain why I've built FreemiumKit in the first place:
+Many people in our community love 😻 RevenueCat, so you might wonder how FreemiumKit compares. The short answer is, that RevenueCat focuses on **growth** for _already successful_ customers, whereas FreemiumKit focuses on **convenience** for _beginners and Indie developers_. See the following table to get a better understanding of what I mean by that:
 
 | Feature                        | FreemiumKit                                           | RevenueCat                     |
 |--------------------------------|-------------------------------------------------------|--------------------------------|
