@@ -6,8 +6,8 @@ Learn how to set up your app for our paywalls and live push notifications.
    @PageImage(purpose: icon, source: "FreemiumKit")
    @TitleHeading("FreemiumKit")
    @PageKind(article)
+   @CallToAction(url: "https://www.youtube.com/watch?v=6JxwA3WieHs", purpose: link, label: "Detailed Setup Video (17 min)")
 }
-
 
 ## Adding the SDK
 
@@ -63,7 +63,6 @@ Learn how to set up your app for our paywalls and live push notifications.
 >       }
 >       .environmentObject(FreemiumKit.shared)
 > }
-
 > ```
 
 ## Understanding Apples Tier System

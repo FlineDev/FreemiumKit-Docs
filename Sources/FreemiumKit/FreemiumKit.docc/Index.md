@@ -57,6 +57,21 @@ FreemiumKit is the ultimate solution for Apple platform developers to integrate 
    }
 }
 
+## Stellar Documentation & Support
+
+Our customers are amazed by our – quote – "stellar" documentation and support:
+
+- We worked hard on providing an **intuitive Onboarding** inside our app.
+- We **simplified every step** in the process as much as possible.
+- We have **detailed guides** for various use cases like for migrating from a paid app
+- We even recorded a detailed **walkthrough video** explaining the entire process
+
+### Explanation Video on YouTube:
+
+@Image(source: "Setup-Guide-Thumbnail")
+
+[https://www.youtube.com/watch?v=6JxwA3WieHs](https://www.youtube.com/watch?v=6JxwA3WieHs)
+
 
 ## FreemiumKit vs. RevenueCat
 
