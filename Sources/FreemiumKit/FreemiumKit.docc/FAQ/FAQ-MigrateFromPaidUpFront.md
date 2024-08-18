@@ -9,7 +9,7 @@ See how easy it is to migrate from a paid-up-front app to a Freemium model using
 
 ## Short Answer
 
-Our SDK uses Apples [built-in solution](https://developer.apple.com/documentation/storekit/supporting_business_model_changes_by_using_the_app_transaction) in StoreKit to determine users who purchased your paid app before your migrated it to the Freemium model. And for new users, it works normally. You just need to tell our SDK which was the last paid version and build number calling `FreemiumKit.shared.lastBuildReleasedAsPaidApp(version:build:)`.
+Our SDK uses Apples [built-in solution](https://developer.apple.com/documentation/storekit/supporting_business_model_changes_by_using_the_app_transaction) in StoreKit to determine users who purchased your paid app before you migrated it to the Freemium model. And for new users, it works normally. You just need to tell our SDK which was the last paid version and build number calling `FreemiumKit.shared.lastPaidRelease(version:build:)`.
 
 > Warning: Apple has introduced the `AppTransaction` API for this purpose in 2022 with iOS 16. Therefore, this guide only works if you target your _new_ Freemium app version to iOS 16 (or macOS 13, tvOS 16, watchOS 9) or later. 
 
