@@ -60,4 +60,4 @@ Have questions or need support? Reach out to me at [freemiumkit@fline.dev](mailt
    Cihat Gündüz © 2024. All rights reserved.
    Privacy: No personal data is tracked on this site.
    [Imprint](https://www.fline.dev/imprint/)
-   }
+}

@@ -135,7 +135,7 @@ Ready to take your app's monetization to the next level? Download FreemiumKit to
 
 ## SDK Setup Guide
 
-For a detailed walkthrough on how to integrate the FreemiumKit SDK into your app, check out our [SDK Setup Guide](doc:SetupGuide).
+For a detailed walkthrough on how to integrate the FreemiumKit SDK into your app, check out our [SDK Setup Guide](doc:SetupGuide). To migrate a paid app to the Freemium model, additionally read our related [Migration Guide](doc:MigrateFromPaid).
 
 
 ## Testimonials
