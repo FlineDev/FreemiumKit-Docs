@@ -28,7 +28,7 @@ struct AwesomeApp: App {
 }
 ```
 
-This single line will already work! But it will use the default Settings app-like colors (black/white/accent) which can look boring.
+This single line will already work! 🎉 But it will use the default system colors (black/white/accent) which can look off.
 
 You probably want to customize the parental gate to look nicer to fit your apps playful color scheme, like this:
 
@@ -74,4 +74,4 @@ Have questions or need support? Reach out to me at [freemiumkit@fline.dev](mailt
    Cihat Gündüz © 2024. All rights reserved.
    Privacy: No personal data is tracked on this site.
    [Imprint](https://www.fline.dev/imprint/)
-   }
+}
