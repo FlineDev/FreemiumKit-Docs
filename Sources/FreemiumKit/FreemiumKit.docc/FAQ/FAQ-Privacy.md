@@ -9,8 +9,13 @@ Learn how FreemiumKit was designed to keep your users data private and reduce th
 
 ## Short Answer
 
-We don't send any personal user data to our servers, respecting user privacy. And we delete purchase data from our servers as soon as they are fetched to your devices. Your purchase data is persisted via CloudKit. This ensures we can't access your purchase history.
+We **don't send any personal user data** to our servers, respecting user privacy. And we delete purchase data from our servers as soon as they are fetched to _your_ devices. Your purchase data is persisted via CloudKit in your Apple Account. We can't access your purchase history.
 
+> Apple App Privacy: If you are here to understand what fields you need to fill out for your app on App Store Connect, here's your quick answer: Select "Purchases" for data types. Then select "Analytics" and "App Functionality" within the "Purchases" detail setup like this:
+>
+> ![Purchase History Setup](AppPrivacy-Purchases)
+>
+> You can answer all subsequent questions with "No" when pressing "Next" because we are not collecting any user-identifiable information.
 
 ## Full Answer
 
