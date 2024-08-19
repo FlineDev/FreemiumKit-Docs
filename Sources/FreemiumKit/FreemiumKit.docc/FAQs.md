@@ -16,6 +16,7 @@ The most frequently asked questions about FreemiumKit.
 - <doc:FAQ-Pricing>
 - <doc:FAQ-MigrateFromRevenueCat>
 - <doc:FAQ-MigrateFromPaidUpFront>
+- <doc:FAQ-ParentalGate>
 - <doc:FAQ-ServerLimits>
 
 
