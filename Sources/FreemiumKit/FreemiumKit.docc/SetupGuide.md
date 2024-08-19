@@ -181,6 +181,15 @@ But if you want to support multiple levels of access to your app, like a combina
    ```
 
 
+## `@EnvironmentObject` vs `FreemiumKit.shared`
+
+Sometimes we were using `FreemiumKit.shared` and sometimes `@EnvironmentObject var freemiumKit: FreemiumKit`. They both actually refer to the exact same Singleton instance. So you might ask yourself: _**When to use which?**_
+
+The answer is simple: Whenever you are in a **SwiftUI view** and you want your view to **automatically update** based on the purchase state, you should use `@EnvironmentObject`. This will ensure that the SwiftUI rendering picks up changes to the purchase state and refreshes your UI accordingly.
+
+Everywhere else, you can use `FreemiumKit.shared`. For exmaple in your model layer, your user-intitiated functions, or even in one-off modifiers in your views like in `onAppear`. 
+
+
 ## SwiftUI Previews
 
 For SwiftUI previews to work where you make use of the built-in views or modifier, add a call to `.environmentObject(FreemiumKit.preview)` in your preview code like so:
