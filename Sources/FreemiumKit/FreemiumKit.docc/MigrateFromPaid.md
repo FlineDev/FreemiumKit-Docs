@@ -1,4 +1,4 @@
-# Migrating Paid apps to the Freemium model
+# Paid to Freemium Migration Guide
 
 Learn how to migrate from a paid-up-front app to the Freemium model using FreemiumKit in 3 simple steps, while preserving access to your app for those who already purchased.
 
