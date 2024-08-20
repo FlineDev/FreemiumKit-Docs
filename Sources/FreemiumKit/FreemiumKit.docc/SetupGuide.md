@@ -210,6 +210,51 @@ If you want to simulate a specific paid state in your previews, you can call the
 }
 ```
 
+## Direct Access to StoreKit Transactions
+
+In some advanced use cases, you might want to directly access the transactions reported by `StoreKit` which our SDK is already subscribed to. You can easily get all valid transactions by calling `FreemiumKit.shared.purchasedTransactions` or even subscribe and react to changes in your SwiftUI views:
+
+```swift
+import FreemiumKit
+
+struct MyView: View {
+   @EnvironmentObject var freemiumKit: FreemiumKit
+
+   var body: some View {
+      MyView()
+         .onChange(of: self.freemiumKit.purchasedTransactions) {
+            for transaction in self.freemiumKit.purchasedTransactions {
+               // do something with the `StoreKit.Transaction`
+            }
+         }
+   }
+}
+```
+
+If all you need to know is _which_ of your in-app purchases/subscriptions the user has purchased, there's a much easier way to get the ID of the product (e.g. `YourApp.Pro.Monthly`):
+
+```swift
+FreemiumKit.shared.purchasedProductID  // returns a `String?`
+```
+
+If all you need is to **get notified** when a user just made a purchase (e.g. to report to analytics or show some kind of confetti effect), use the built-in `.onPurchaseCompleted` modifier which has the purchased `transaction` available with all the StoreKit details if needed:
+
+```swift
+import FreemiumKit
+
+@main
+struct MyApp: App {
+   var body: some Scene {
+      WindowGroup {
+         MainView()
+            .onPurchaseCompleted { transaction in
+               // show confetti or report transaction details to analytics
+            }
+            .environmentObject(FreemiumKit.shared)
+      }
+   }
+}
+```
 
 ## Contact
 
