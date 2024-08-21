@@ -69,6 +69,8 @@ Make sure your project builds before moving on to the next step.
 
 Once you migrated all your code over to FreemiumKit, you can remove the RevenueCat SDK from your project. Once the dependency is removed, build your project to find places where you still are importing the RevenueCat SDKs and where you configuried it (probably in your app entry point). Remove the configuration code and all import statements. Your project should build now and the technical part of the migration process is completed! Feel free to commit. 🎉
 
+> Tip: While FreemiumKit is much more convenient to use than RevenueCat overall (less clicks, less code, more "built-in" stuff like localization), services like RevenueCat have been around for longer and excel at other areas like integrations with other services. If you want to keep using RevenueCat for these benefits, just put their SDK to "Observer mode" rather than removing it entirely: [Learn more](https://www.revenuecat.com/docs/migrating-to-revenuecat/sdk-or-not/finishing-transactions).
+
 ### Step 5: Adjust the Paywall UI in FremiumKit (5 min)
 
 While at this point your app is already fully migrated to FreemiumKit, you might want to open the FreemiumKit app, select your project and open the 'Paywalls' tab.
