@@ -148,7 +148,7 @@ But if you want to support multiple levels of access to your app, like a combina
          }
          .paywall(isPresented: $showPaywall)
          .onPurchasesLoaded {
-            if !FremiumKit.shared.hasPurchased {
+            if !FreemiumKit.shared.hasPurchased {
                showPaywall = true
             }
          }
