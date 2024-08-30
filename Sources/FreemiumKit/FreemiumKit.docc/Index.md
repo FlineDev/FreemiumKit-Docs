@@ -157,6 +157,14 @@ Here's what customers are saying about FreemiumKit:
    }
 }
 
+@Row {
+   @Column {
+      ![Testimonial Image](path/to/testimonial-image.png)
+
+      > Michael Lysons, QuizFolks: The setup video is very well done. I’ve been using FreemiumKit to setup In-App Purchases for my app – it’s been very straightforward, very good indeed! And the developer is an absolute pleasure to work with.
+   }
+}
+
 
 ## FAQ
 
