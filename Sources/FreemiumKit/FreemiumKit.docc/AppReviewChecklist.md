@@ -37,6 +37,9 @@ This checklist helps developers using FreemiumKit to navigate Apple's app review
    - Select "Purchases" for data types
    - Choose "Analytics" and "App Functionality" within "Purchases"
    - Answer subsequent questions with 'No' (we don't collect user-identifiable data)
+   
+   ![Purchase History Setup](AppPrivacy-Purchases)
+
 
 4. **Include Apple's EULA in App Description**
    - Add this to your App Store description (all locales):
