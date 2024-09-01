@@ -106,6 +106,19 @@ This checklist helps developers using FreemiumKit to navigate Apple's app review
    
       > Note: You can optionally add these links to your paywall using "Auxiliary Buttons" in the FreemiumKit paywall editor, but it's not a requirement. They are only required directly within your app to ensure users can access them even without/before/after making a purchase.
 
+## Transparent Communication
+
+1. **Label Paid Features in App Description**
+
+   - If you mention features that require payment, clearly indicate that in your description
+   
+2. **Label Paid Features in Screenshots and Previews**
+
+   - If featuring premium content, add a label like "Premium Feature" / "Requires Subscription"
+   - For app preview videos, add a text overlay when showing premium features
+
+> Tip: If your app allows free access to one instance of a feature and requires payment for more, you might get away without mentioning in-app purchases at all. To be safe, mention that you have limited free content in your app and users need to pay for more.
+
 ## Conclusion
 
 Following this checklist will help ensure a smoother app review process when using FreemiumKit for in-app purchases. Remember to thoroughly test your app before submission and stay updated with Apple's latest guidelines.
