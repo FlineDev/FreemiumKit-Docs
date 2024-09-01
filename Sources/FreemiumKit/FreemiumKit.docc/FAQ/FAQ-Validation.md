@@ -20,6 +20,7 @@ While StoreKit 2 makes sure a transaction is coming from Apple and has not been 
 
 The complexity of such an attack is very high though and most apps are vulnerable to it even with server-side receipt validation because the attacker can simply bypass the boolean check inside the apps logic if they have this level of access to your apps code. Protecting against all potential security risks is impossible and we think that the built-in transaction verification is a good level of security for most apps.
 
+[🏠 Back to Home](https://freemiumkit.app)
 
 ## Contact
 

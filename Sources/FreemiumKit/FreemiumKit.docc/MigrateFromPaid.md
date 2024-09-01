@@ -48,6 +48,8 @@ The FreemiumKit SDK will automatically treat any users who had paid for your app
 
 > Tip: If you want to particularly know if the current user is a paid-up-front puchaser who upgraded (e.g. to give them extras like an 'Early Adopter' badge), you can call `hasUpgradedFromPaidRelease` on `FreemiumKit.shared` or on the FreemiumKit `@EnvironmentObject`.
 
+[🏠 Back to Home](https://freemiumkit.app)
+
 ## Contact
 
 Have questions or need support? Reach out to me at [freemiumkit@fline.dev](mailto:freemiumkit@fline.dev).

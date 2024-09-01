@@ -85,6 +85,8 @@ If you have created more products on App Store Connect than you want to show in 
 
 For example, if you have a Weekly, a Monthly, a Yearly, and a Lifetime purchase on Connect (and all of them are approved), then they all will be shown in our paywalls. If you want to exclude e.g. the Weekly purchase from your paywall, that's currently not supported.
 
+[🏠 Back to Home](https://freemiumkit.app)
+
 ## Contact
 
 Have questions or need support? Reach out to me at [freemiumkit@fline.dev](mailto:freemiumkit@fline.dev).

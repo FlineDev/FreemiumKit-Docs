@@ -258,6 +258,8 @@ struct MyApp: App {
 }
 ```
 
+[🏠 Back to Home](https://freemiumkit.app)
+
 ## Contact
 
 Have questions or need support? Reach out to me at [freemiumkit@fline.dev](mailto:freemiumkit@fline.dev).

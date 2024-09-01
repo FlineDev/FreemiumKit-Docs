@@ -21,6 +21,8 @@ If you exceed your current plan, you don't need to worry, nothing bad will happe
 
 > Note: This is all how it's _planned_ to work. Currently, there's no payment at all and FreemiumKit is free to use for everyone. If you have any doubts about this system, don't hesitate to contact me, I might adjust things as needed.
 
+[🏠 Back to Home](https://freemiumkit.app)
+
 ## Contact
 
 Have questions or need support? Reach out to me at [freemiumkit@fline.dev](mailto:freemiumkit@fline.dev).

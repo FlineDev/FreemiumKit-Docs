@@ -24,7 +24,7 @@ Read our full guide here:
    - <doc:MigrateFromPaid>
 }
 
-
+[🏠 Back to Home](https://freemiumkit.app)
 
 ## Contact
 

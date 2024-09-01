@@ -125,6 +125,8 @@ This checklist helps developers using FreemiumKit to navigate Apple's app review
 
 Following this checklist will help ensure a smoother app review process when using FreemiumKit for in-app purchases. Remember to thoroughly test your app before submission and stay updated with Apple's latest guidelines.
 
+[🏠 Back to Home](https://freemiumkit.app)
+
 ## Support
 
 For questions or support, contact: [freemiumkit@fline.dev](mailto:freemiumkit@fline.dev)

@@ -37,6 +37,9 @@ The only non-Apple technologies here are our server and CDN. We included these d
 
 Of course, we don't expect our servers to be down any significant amount of time. This was just to show you that we have considered all cases when designing FreemiumKit conceptually. And because all the purchases are directly configured on App Store Connect, you could even decide to move away from FreemiumKit entirely if you find our feature set does not fulfill your needs. There are no lock-in features. But beware, you will miss all our built-in conveniences! 😉
 
+
+[🏠 Back to Home](https://freemiumkit.app)
+
 ## Contact
 
 Have questions or need support? Reach out to me at [freemiumkit@fline.dev](mailto:freemiumkit@fline.dev).

@@ -60,7 +60,7 @@ The result will look like this on iOS (and similar on other platforms):
 
 @Image(source: "ParentalGate-Customized")
 
-
+[🏠 Back to Home](https://freemiumkit.app)
 
 ## Contact
 

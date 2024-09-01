@@ -31,6 +31,8 @@ If you happen to stop using the FreemiumKit app for some reason, new purchases a
 
 That's why we strongly recommend to **keep push notifications enabled** on FreemiumKit for iPhone, even if you don't wish to actually receive push notifications. You can turn off push notifications within the FreemiumKit app, which will disable the local push notification sent by the app while woken up in the background by a silent push notification. This way, the app will continue fetching purchase data without bothering you with push notifications.
 
+[🏠 Back to Home](https://freemiumkit.app)
+
 
 ## Contact
 

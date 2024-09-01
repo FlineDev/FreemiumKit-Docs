@@ -45,6 +45,7 @@ struct MyView: View {
 
 You can also access it globally via `FreemiumKit.shared.appAccountToken` but make sure that `FreemiumKit.shared.purchasesLoad` is `true`, else you won't get the correct `UUID`. Note that FreemiumKit loads this data upon app start and caches it, so most of the time it should be available.
 
+[🏠 Back to Home](https://freemiumkit.app)
 
 ## Contact
 
