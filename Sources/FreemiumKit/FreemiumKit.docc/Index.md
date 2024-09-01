@@ -199,6 +199,7 @@ Have questions or need support? Reach out to me at [freemiumkit@fline.dev](mailt
 
 ## Topics
 
+- <doc:Index>
 - <doc:SetupGuide>
 - <doc:AppReviewChecklist>
 - <doc:MigrateFromPaid>
