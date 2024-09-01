@@ -134,9 +134,9 @@ Ready to take your app's monetization to the next level? Download FreemiumKit to
 [Download Now](https://apps.apple.com/app/apple-store/id6502914189?pt=549314&ct=freemiumkit.app&mt=8)
 
 
-## SDK Setup Guide
+## Detailed Setup Guides
 
-For a detailed walkthrough on how to integrate the FreemiumKit SDK into your app, check out our [SDK Setup Guide](doc:SetupGuide). To migrate a paid app to the Freemium model, additionally read our related [Migration Guide](doc:MigrateFromPaid).
+For a detailed walkthrough on how to integrate the FreemiumKit SDK into your app, check out our [SDK Setup Guide](doc:SetupGuide). For a smooth app review process with in-app purchases, use our [App Review Checklist](doc:AppReviewChecklist). To migrate a paid app to the Freemium model, refer to our [Migration Guide](doc:MigrateFromPaid).
 
 
 ## Testimonials
@@ -200,5 +200,6 @@ Have questions or need support? Reach out to me at [freemiumkit@fline.dev](mailt
 ## Topics
 
 - <doc:SetupGuide>
+- <doc:AppReviewChecklist>
 - <doc:MigrateFromPaid>
 - <doc:FAQs>
