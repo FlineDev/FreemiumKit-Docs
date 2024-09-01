@@ -65,7 +65,7 @@ This checklist helps developers using FreemiumKit to navigate Apple's app review
                       self.openURL(URL(string: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/")!)
                    }
                    Button("Privacy", systemImage: "lock") {
-                      self.openURL(URL(string: "https://www.example.com/privacy")!)
+                      self.openURL(URL(string: "https://www.fline.dev/app-privacy-analytics-en/")!)
                    }
                 }
                 #endif
@@ -92,7 +92,7 @@ This checklist helps developers using FreemiumKit to navigate Apple's app review
                       self.openURL(URL(string: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/")!)
                    }
                    Button("Privacy") {
-                      self.openURL(URL(string: "https://www.example.com/privacy")!)
+                      self.openURL(URL(string: "https://www.fline.dev/app-privacy-analytics-en/")!)
                    }
                 }
              }
