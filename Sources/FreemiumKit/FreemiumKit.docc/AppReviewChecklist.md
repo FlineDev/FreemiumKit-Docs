@@ -21,6 +21,8 @@ This checklist helps developers using FreemiumKit to navigate Apple's app review
    - Click 'Select In-App Purchases or Subscriptions'
    - Associate relevant products with your build
 
+   ![Select Purchases](SelectPurchases)
+
 ## Legal Compliance
 
 1. **Accept Latest 'Paid Apps Agreement'**
