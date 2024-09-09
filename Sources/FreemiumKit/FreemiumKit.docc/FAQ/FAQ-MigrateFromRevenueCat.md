@@ -45,7 +45,7 @@ If this is the case, then somewhere in your project you're checking if the curre
 // async/await call
 let customerInfo = try await Purchases.shared.customerInfo()
 
-// 
+// closure-based call 
 Purchases.shared.getCustomerInfo { (customerInfo, error) in
     // access latest customerInfo
 }
