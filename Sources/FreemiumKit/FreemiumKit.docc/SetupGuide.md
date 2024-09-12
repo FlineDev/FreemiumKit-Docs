@@ -182,6 +182,7 @@ But if you want to support multiple levels of access to your app, like a combina
    }
    ```
 
+> Tip: We prepared a <doc:AppReviewChecklist> you will find useful, especially if this is the first time you're publishing an app with In-App Purchases.
 
 ## `@EnvironmentObject` vs `FreemiumKit.shared`
 
