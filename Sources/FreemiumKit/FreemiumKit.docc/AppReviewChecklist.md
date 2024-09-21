@@ -12,7 +12,7 @@ This checklist helps developers using FreemiumKit to navigate Apple's app review
 
 1. **Set App Price to Free**
    - Navigate to "Pricing and Availability" in App Store Connect
-   - Set app price to "0.00" / Free (assuming your app is Freemium)
+   - Set app price to "0.00" / Free (assuming your app is new & Freemium)
    - Ensure availability for all desired countries
 
 2. **Link IAPs/Subscriptions to Your Build**
@@ -22,6 +22,8 @@ This checklist helps developers using FreemiumKit to navigate Apple's app review
    - Associate relevant products with your build
 
    ![Select Purchases](SelectPurchases)
+
+   > In-App Purchases are reviewed together with your submitted app.
 
 ## Legal Compliance
 
