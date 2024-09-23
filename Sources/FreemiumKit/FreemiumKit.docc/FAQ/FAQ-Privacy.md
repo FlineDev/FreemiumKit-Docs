@@ -27,7 +27,7 @@ Secondly, we **don't keep the data for long**: The moment the FreemiumKit app on
 
 To ensure your data is backed up and syncs across devices, we use CloudKit. This way, even if you delete the FreemiumKit app or lose your device, you can just reinstall FreemiumKit on another device and your full purchase history statistics will stay available within the same Apple Account.
 
-If you happen to stop using the FreemiumKit app for some reason, new purchases are kept up to 90 days on our servers. So you'll always be able to fetch tha last 90 days if you decide to return. If you have push notifications disabled, you need to open the app at least once every 90 days to not lose any purchase history data. If you returned after 100 days, you would lose 10 days of data, for example.
+If you happen to stop using the FreemiumKit app for some reason, new purchases are kept up to 90 days on our servers. So you'll always be able to fetch the last 90 days if you decide to return. If you have push notifications disabled, you need to open the app at least once every 90 days to not lose any purchase history data. If you returned after 100 days, you would lose 10 days of data, for example.
 
 That's why we strongly recommend to **keep push notifications enabled** on FreemiumKit for iPhone, even if you don't wish to actually receive push notifications. You can turn off push notifications within the FreemiumKit app, which will disable the local push notification sent by the app while woken up in the background by a silent push notification. This way, the app will continue fetching purchase data without bothering you with push notifications.
 

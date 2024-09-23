@@ -13,9 +13,9 @@ FreemiumKit uses the built-in `appDeviceToken` in StoreKit 2 to recognize the sa
 
 ## Full Answer
 
-If you have your own server-side logic for locking/unlocking functionality based on usage (such as '100 posts per month'), you will want to identify the same user across app installs or devices. To do this, you can access `appAccountToken` on the `FreemiumKit` environment object which will return a `UUID` stored right within StoreKit (so Apple makes sure you recognize the same user across devices – we don't that data on our servers).
+If you have your own server-side logic for locking/unlocking functionality based on usage (such as '100 posts per month'), you will want to identify the same user across app installs or devices. To do this, you can access `appAccountToken` on the `FreemiumKit` environment object which will return a `UUID` stored right within StoreKit (so Apple makes sure you recognize the same user across devices – we don't store that data on our servers).
 
-Access the field only after purchases are loaded like so:
+Access the field after purchases are loaded like so:
 
 ```swift
 import FreemiumKit
@@ -27,17 +27,9 @@ struct MyView: View {
       VStack {
          // your main view ...
       }
-      .onAppear {
-         if freemiumkit.purchasesLoaded {
-            let appAccountToken: UUID = freemiumKit.appAccountToken
-            // do something with the app account token
-         }
-      }
-      .onChange(of: freemiumKit.purchasesLoaded) {
-         if freemiumkit.purchasesLoaded {
-            let appAccountToken: UUID = freemiumKit.appAccountToken
-            // do something with the app account token
-         }
+      .onPurchasesLoaded {
+         let appAccountToken: UUID = freemiumKit.appAccountToken
+         // do something with the app account token
       }
    }
 }
