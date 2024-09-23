@@ -190,7 +190,7 @@ Sometimes we were using `FreemiumKit.shared` and sometimes `@EnvironmentObject v
 
 The answer is simple: Whenever you are in a **SwiftUI view** and you want your view to **automatically update** based on the purchase state, you should use `@EnvironmentObject`. This will ensure that the SwiftUI rendering picks up changes to the purchase state and refreshes your UI accordingly.
 
-Everywhere else, you can use `FreemiumKit.shared`. For exmaple in your model layer, your user-intitiated functions, or even in one-off modifiers in your views like in `onAppear`. 
+Everywhere else, you can use `FreemiumKit.shared`. For example in your model layer, your user-intitiated functions, or even in one-off modifiers in your views like in `onAppear`. 
 
 
 ## SwiftUI Previews
@@ -212,6 +212,8 @@ If you want to simulate a specific paid state in your previews, you can call the
       .environmentObject(FreemiumKit.preview.withOverridesForDebug(purchasedTier: 1))
 }
 ```
+
+> Note: The paywall UI you will see in SwiftUI previews will not reflect your custom paywall UI due to previews being rendered outside your apps lifecycle. Run your app on device or simulator to see your own paywall. 
 
 ## Direct Access to StoreKit Transactions
 
