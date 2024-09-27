@@ -101,27 +101,27 @@ If you are a RevenueCat user and want to migrate to FreemiumKit, read our [migra
 
 FreemiumKit is **completely free to use** at the moment for _everyone_.
 
-In the future, only developers with more than $500 monthly income on App Store Connect will need to pay, and always less than 1% of their income. The full planned pricing table:
+In the future, only developers with more than $500 monthly income on App Store Connect will need to pay, and **only 0.5% of their income on average**. The full planned pricing table:
 
 @Row {
    @Column {
       | Monthly Income        | Cost     |
       |-----------------------|----------|
       | $0 - $500             | Free     |
-      | $500 - $1k            | $5/mo    |
-      | $1k - $2k             | $10/mo   |
-      | $2k - $4.5k           | $20/mo   |
-      | $4.5k - $7.5k         | $45/mo   |
+      | $500 - $1,500k        | $5/mo    |
+      | $1,500 - $3,000       | $11/mo   |
+      | $3,000 - $5,000       | $20/mo   |
+      | $5,000 - $8,000       | $33/mo   |
    }
 
    @Column {
       | Monthly Income        | Cost      |
       |-----------------------|---------- |
-      | $7.5k - $15k          | $75/mo    |
-      | $15k - $30k           | $150/mo   |
-      | $30k - $50k           | $300/mo   |
-      | $50k - $100k          | $500/mo   |
-      | $100k+                | $1,000/mo |
+      | $8,000 - $12,000      | $50/mo    |
+      | $12,000 - $18,000     | $75/mo    |
+      | $18,000 - $32,000     | $125/mo   |
+      | $32,000 - $75,000     | $250/mo   |
+      | $75,000 – Unlimited   | $500/mo   |
    }
 }
 
