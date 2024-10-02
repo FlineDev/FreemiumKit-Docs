@@ -1,6 +1,6 @@
 # I use RevenueCat, how can I migrate?
 
-See how easy it is to migrate from RevenueCat with our detailed migration guide – takes only ~30 minutes (including read time). And learn about some limitations we currently have.
+See how easy it is to migrate from RevenueCat with our detailed migration guide – takes only ~30 minutes (including read time).
 
 @Metadata {
    @TitleHeading("FAQs")
@@ -17,7 +17,6 @@ Migrating from RevenueCat involves the following steps (outlined in detail below
 1. Remove the RevenueCat SDK integration from your app (5 min)
 1. Adjust the Paywall UI in FreemiumKit to your liking (5 min)
 
-Current limits: You can't select products for the paywall at this moment – all of them are automatically shown. (This limitation will be fixed in a future version.)
 
 ## Full Answer
 
@@ -79,11 +78,6 @@ Here you can see a preview of your paywall and adjust it with many configuration
 
 You might also want to optionally delete the 'FreemiumKit' config file from your Asset Catalog and drag & drop the now adjusted config file from the 'Setup' tab. This will make sure your adjustments are also available in case the remote config file can't be loaded on the users devices, where FreemiumKit will fall back to the local file included in the Asset Catalog.
 
-### Current Limitations
-
-If you have created more products on App Store Connect than you want to show in your paywall, you might want to wait until we have implemented a product selection for paywalls in a future version.
-
-For example, if you have a Weekly, a Monthly, a Yearly, and a Lifetime purchase on Connect (and all of them are approved), then they all will be shown in our paywalls. If you want to exclude e.g. the Weekly purchase from your paywall, that's currently not supported.
 
 [🏠 Back to Home](https://freemiumkit.app)
 
