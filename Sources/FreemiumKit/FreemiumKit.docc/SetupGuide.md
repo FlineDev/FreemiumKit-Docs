@@ -176,6 +176,7 @@ But if you want to support multiple levels of access to your app, like a combina
       Section {
          PaidStatusView(style: .decorative(icon: .laurel))
             .listRowBackground(Color.accentColor)
+            .padding(.vertical, -10)
       }
       
       // ...
