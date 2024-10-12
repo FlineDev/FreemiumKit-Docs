@@ -19,6 +19,7 @@ The most frequently asked questions about FreemiumKit.
 - <doc:FAQ-ParentalGate>
 - <doc:FAQ-ServerLimits>
 - <doc:FAQ-FixCrashOnStart>
+- <doc:FAQ-LegacyProducts>
 
 
 ## Contact
