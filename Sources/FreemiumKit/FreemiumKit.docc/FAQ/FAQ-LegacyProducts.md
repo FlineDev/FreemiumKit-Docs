@@ -9,7 +9,7 @@ Learn how FreemiumKit allows you to mark purchases as 'legacy' and how the SDK e
 
 ## Short Answer
 
-Disabling products without users losing access involed three steps:
+Disabling products without users losing access involves three steps:
 
 1. Disable the checkmark for your legacy product in the "Products" tab within FreemiumKit.
 2. Press on "Save Changes to Remote" on the "Paywalls" tab within FreemiumKit to save the changes.
