@@ -81,13 +81,13 @@ Many people in our community love 😻 RevenueCat, so you might wonder how Freem
 | **Quick Setup**                | ✅ (automated creation of products on Connect)        | ❌                             |
 | **Paywalls**                   | ✅ (on all Apple Platforms, even visionOS!)           | 🚧 (only iOS)                  |
 | **Built-In Localization**      | ✅ (paywalls localized to ~40 languages)              | ❌                             |
-| **Real-Time Notifications**    | ✅ (push notifications sent to native iPhone app)     | ❌ (only webhooks)             |
+| **Real-Time Notifications**    | ✅ (push notifications sent to native iPhone app)     | ✅ (inspired by FreemiumKit)   |
 | **Skip Renewal Notifications** | ✅ (reports purchases & **new** subscriptions)        | ❌                             |
 | **Verified Transactions**      | ✅ (using StoreKit 2)                                 | ✅                             |
 | **A/B Testing**                | ✅ (fast setup, up to 4 designs in parallel)          | ✅ (but a lot of work)         |
-| **Native App**                 | ✅ (on all Apple Platforms)                           | ❌                             |
+| **Native App**                 | ✅ (on all Apple Platforms)                           | ❌ (only Purchases)            |
 | **Purchases Dashboard**        | ✅ (in native app)                                    | ✅ (only Web)                  |
-| **Purchase Power Parity (Soon!)**      | ✅ (adjustable slider to mix with Apple prices)       | ❌                             |
+| **Purchase Power Parity (Soon!)** | ✅ (adjustable slider to mix with Apple prices)    | ❌                             |
 | **Scalable**                   | ✅ (CDN for remote config, purchases in iCloud)       | ✅ (higher price)              |
 | **Low App Size Impact**        | ✅ (3MB less than RevenueCat)                         | ❌                             |
 | **User Privacy**               | ✅ (no personal data sent, server temporary storage)  | ❌ (lots of data)              |
