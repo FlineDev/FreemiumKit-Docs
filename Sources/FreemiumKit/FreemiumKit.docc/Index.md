@@ -93,7 +93,7 @@ Many people in our community love 😻 RevenueCat, so you might wonder how Freem
 | **User Privacy**               | ✅ (no personal data sent, server temporary storage)  | ❌ (lots of data)              |
 | **Supports Apple Platforms**   | ✅ (including visionOS)                               | ✅ (including visionOS)        |
 | **Supports Android & Web**     | ❌                                                    | ✅                             |
-| **Pricing**                    | Freemium, paid tier **below 1%** of Revenue           | Freemium, paid tier exactly 1% of Revenue |
+| **Pricing**                    | Freemium, paid tier **0.5%** of Revenue               | Freemium, paid tier exactly 1% of Revenue |
 
 If you are a RevenueCat user and want to migrate to FreemiumKit, read our [migration guide](doc:FAQ-MigrateFromRevenueCat).
 
