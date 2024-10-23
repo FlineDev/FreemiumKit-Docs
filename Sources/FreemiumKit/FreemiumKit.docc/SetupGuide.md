@@ -262,6 +262,21 @@ struct MyApp: App {
 }
 ```
 
+## Dynamically Showing Product Tiers
+
+You can customize which product tiers are shown in the paywall using the `showTierInPaywall` closure. This is particularly useful when you have multiple product tiers and want to conditionally display or hide certain tiers based on dynamic logic, such as a user's app usage or behavior.
+
+To configure this behavior, simply assign a closure to `FreemiumKit.shared.showTierInPaywall`. The closure takes the tier number as an input and needs to return `true` if the tier should be displayed or `false` if it should be hidden. Here's an example of how to hide a specific tier, call this right on app start:
+
+```swift
+FreemiumKit.shared.showTierInPaywall = { tier in
+   return tier != 3  // hide tier 3, but show all others
+}
+```
+
+This allows you to tailor the product options presented to your users, improving their experience based on their specific circumstances.
+
+
 [🏠 Back to Home](https://freemiumkit.app)
 
 ## Contact
