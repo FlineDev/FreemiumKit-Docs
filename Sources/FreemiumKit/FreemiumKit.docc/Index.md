@@ -82,7 +82,6 @@ Many people in our community love 😻 RevenueCat, so you might wonder how Freem
 | **Paywalls**                   | ✅ (on all Apple Platforms, even visionOS!)           | 🚧 (only iOS)                  |
 | **Built-In Localization**      | ✅ (paywalls localized to ~40 languages)              | ❌                             |
 | **Real-Time Notifications**    | ✅ (push notifications sent to native iPhone app)     | ✅ (inspired by FreemiumKit)   |
-| **Skip Renewal Notifications** | ✅ (reports purchases & **new** subscriptions)        | ❌                             |
 | **Verified Transactions**      | ✅ (using StoreKit 2)                                 | ✅                             |
 | **A/B Testing**                | ✅ (fast setup, up to 4 designs in parallel)          | ✅ (but a lot of work)         |
 | **Native App**                 | ✅ (on all Apple Platforms)                           | ❌ (only Purchases)            |
