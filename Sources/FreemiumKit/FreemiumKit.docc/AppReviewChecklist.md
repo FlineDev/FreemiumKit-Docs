@@ -56,7 +56,8 @@ This checklist helps developers using FreemiumKit to navigate Apple's app review
 
    - Within Your App:
      - Add a link for Privacy and Terms in settings menu or Help menu (Mac)
-     - For iOS, example code:
+     - Consider using my open-source package [LinksKit](https://github.com/FlineDev/LinksKit) for a great solution
+     - Or manually use code like this for iOS:
        ```swift
        import SwiftUI
 
@@ -80,7 +81,7 @@ This checklist helps developers using FreemiumKit to navigate Apple's app review
           }
        }
        ```
-     - For macOS, example code:
+     - Or this for macOS:
        ```swift
        import SwiftUI
 
