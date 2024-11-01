@@ -162,6 +162,12 @@ Here's what customers are saying about FreemiumKit:
 
       > Michael Lysons, QuizFolks: The setup video is very well done. I’ve been using FreemiumKit to setup In-App Purchases for my app – it’s been very straightforward, very good indeed! And the developer is an absolute pleasure to work with.
    }
+   
+   @Column {
+      ![Testimonial Image](path/to/testimonial-image.png)
+      
+      > Stewart Lynch, CreaTECH Solutions: I don’t think I have ever been as impressed with anything as much as I am with FreemiumKit for In-App Purchases and Paywalls. Cihat has done such a fantastic job in the app, and in the YouTube guide. Every one of my questions were answered.
+   }
 }
 
 
