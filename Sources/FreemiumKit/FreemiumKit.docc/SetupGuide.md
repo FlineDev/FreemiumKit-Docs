@@ -93,9 +93,7 @@ But if you want to support multiple levels of access to your app, like a combina
    }
    ```
 
-   Both `PaidFeatureButton` and `PaidFeatureView` accept an `unlocksAtTier` parameter of type `Int` (default: `1`) and a `showPaywallOnPressIfLocked` parameter of type `Bool` (default: `true`).
-
-   If you don't pass any of those parameters, the default behavior unlocks the feature only if tier 1 is purchased and shows a paywall on press if tier 1 is not yet purchased. If `showPaywallOnPressIfLocked` is set to `false`, the locked view will not have any automatic interaction, just rendering locked view state as-is without any added behavior.
+   Both `PaidFeatureButton` and `PaidFeatureView` accept an `unlocksAtTier` parameter of type `Int` (default: `1`), a `showPaywallOnPressIfLocked` parameter of type `Bool` (default: `true`), and a `freeIf` parameter of type `(() -> Bool)?` (default: `nil`) to conditionally provide free access.
 
    > Note: If you place `PaidFeatureButton` or `PaidFeatureView` inside a view that self-dismisses itself after any interaction (like in a `Menu`), the paywall might not show because SwiftUI deinitializes the view and attached logic before it can be executed. Use the below method in such contexts and place the `.paywall` modifier at the root of your view to avoid auto-deinit.
 
