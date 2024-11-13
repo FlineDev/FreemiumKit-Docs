@@ -85,7 +85,6 @@ Many people in our community love 😻 RevenueCat, so you might wonder how Freem
 | **Verified Transactions**      | ✅ (using StoreKit 2)                                 | ✅                             |
 | **A/B Testing**                | ✅ (fast setup, up to 4 designs in parallel)          | ✅ (but a lot of work)         |
 | **Native App**                 | ✅ (on all Apple Platforms)                           | ❌ (only Purchases)            |
-| **Purchases Dashboard**        | ✅ (in native app)                                    | ✅ (only Web)                  |
 | **Purchase Power Parity (Soon!)** | ✅ (adjustable slider to mix with Apple prices)    | ❌                             |
 | **Scalable**                   | ✅ (CDN for remote config, purchases in iCloud)       | ✅ (higher price)              |
 | **Low App Size Impact**        | ✅ (3MB less than RevenueCat)                         | ❌                             |
