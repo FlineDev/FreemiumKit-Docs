@@ -194,25 +194,25 @@ Everywhere else, you can use `FreemiumKit.shared`. For example in your model lay
 
 ## SwiftUI Previews
 
-For SwiftUI previews to work where you make use of the built-in views or modifier, add a call to `.environmentObject(FreemiumKit.preview)` in your preview code like so:
+For SwiftUI previews to work where you make use of the built-in views or modifier, add a call to `.environmentObject(FreemiumKit.shared)` in your preview code like so:
 
 ```swift
 #Preview {
    YourView()
-      .environmentObject(FreemiumKit.preview)
+      .environmentObject(FreemiumKit.shared)
 }
 ```
 
-If you want to simulate a specific paid state in your previews, you can call the `withOverridesForDebug(purchasedTier:)` function on `FreemiumKit.preview` and set your desired tier (set `1` for full access). The default `FreemiumKit.preview` shows in the "nothing purchased" state, showcasing how things will look from a Free users perspective. For example:
+If you want to simulate a specific paid state in your previews, you can call the `withOverridesForDebug(purchasedTier:)` function on `FreemiumKit.shared` and set your desired tier (set `1` for full access). The default `FreemiumKit.shared` shows in the "nothing purchased" state, showcasing how things will look from a Free users perspective. For example:
 
 ```swift
 #Preview("Full Access") {
    YourView()
-      .environmentObject(FreemiumKit.preview.withOverridesForDebug(purchasedTier: 1))
+      .environmentObject(FreemiumKit.shared.withOverridesForDebug(purchasedTier: 1))
 }
 ```
 
-> Note: The paywall UI you will see in SwiftUI previews will not reflect your custom paywall UI due to previews being rendered outside your apps lifecycle. Run your app on device or simulator to see your own paywall. 
+> Note: To see your paywall UI in previews, drag & drop your config file in the 'Setup' tab to your `Preview Assets.xcassets` folder (in addition to `Assets.xcassets`). 
 
 ## Direct Access to StoreKit Transactions
 
