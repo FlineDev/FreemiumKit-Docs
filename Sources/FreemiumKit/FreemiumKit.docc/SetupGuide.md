@@ -212,7 +212,7 @@ If you want to simulate a specific paid state in your previews, you can call the
 }
 ```
 
-> Note: To see your paywall UI in previews, drag & drop your config file in the 'Setup' tab to your `Preview Assets.xcassets` folder (in addition to `Assets.xcassets`). 
+> Note: To see your paywall UI in previews, drag & drop your config file in the 'Setup' tab to your `Preview Assets.xcassets` folder (in addition to `Assets.xcassets`), but rename this asset from 'FreemiumKit' to 'FreemiumKitPreview' after the drag to avoid duplicate asset warnings. 
 
 ## Direct Access to StoreKit Transactions
 
