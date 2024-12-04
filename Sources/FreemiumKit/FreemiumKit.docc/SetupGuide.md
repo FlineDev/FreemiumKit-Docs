@@ -189,8 +189,9 @@ Sometimes we were using `FreemiumKit.shared` and sometimes `@EnvironmentObject v
 
 The answer is simple: Whenever you are in a **SwiftUI view** and you want your view to **automatically update** based on the purchase state, you should use `@EnvironmentObject`. This will ensure that the SwiftUI rendering picks up changes to the purchase state and refreshes your UI accordingly.
 
-Everywhere else, you can use `FreemiumKit.shared`. For example in your model layer, your user-intitiated functions, or even in one-off modifiers in your views like in `onAppear`. 
+Everywhere else, you can use `FreemiumKit.shared`. For example in your model layer, your user-intitiated functions, or even in one-off modifiers in your views like in `onAppear`.
 
+> Before accessing `FreemiumKit` with either method in an Apple Watch extension, please read <doc:FAQ-AppleWatch> first.
 
 ## SwiftUI Previews
 
@@ -273,7 +274,7 @@ FreemiumKit.shared.showTierInPaywall = { tier in
 ```
 
 This allows you to tailor the product options presented to your users, improving their experience based on their specific circumstances.
-
+ 
 
 [🏠 Back to Home](https://freemiumkit.app)
 
