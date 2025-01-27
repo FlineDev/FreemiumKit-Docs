@@ -18,6 +18,7 @@ The most frequently asked questions about FreemiumKit.
 - <doc:FAQ-MigrateFromPaidUpFront>
 - <doc:FAQ-AppleWatch>
 - <doc:FAQ-ParentalGate>
+- <doc:FAQ-ConsumableProducts>
 - <doc:FAQ-ServerLimits>
 - <doc:FAQ-TestFlightTroubleshooting>
 - <doc:FAQ-FixCrashOnStart>
