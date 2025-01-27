@@ -32,6 +32,30 @@ ConsumablePurchaseButton(
 }
 ```
 
+### Preloading Consumables (Optional but Recommended)
+
+While subscriptions and lifetime purchases are pre-loaded automatically upon app start, consumables need to be preloaded explicitly. Add this call to your app entry point to eliminate unnecessary loading delays when presenting your consumable purchases:
+
+```swift
+@main
+struct MyApp: App {
+    init() {
+        // Preload consumable product details
+        FreemiumKit.shared.preloadConsumables(productIDs: [
+            "com.app.tokens.50",
+            "com.app.tokens.100",
+            "com.app.tokens.400"
+        ])
+    }
+
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+                .environmentObject(FreemiumKit.shared)
+        }
+    }
+}
+
 ### Managing Purchases
 
 Unlike subscriptions which are persisted by the App Store, you need to implement your own logic to handle consumable purchases. Some examples:
