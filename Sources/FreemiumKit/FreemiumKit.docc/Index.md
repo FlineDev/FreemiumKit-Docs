@@ -176,8 +176,8 @@ The top 5 most frequently asked questions:
 
 @Links(visualStyle: list) {
    - <doc:FAQ-HowItWorks>
-   - <doc:FAQ-Validation>
    - <doc:FAQ-Pricing>
+   - <doc:FAQ-ConsumableProducts>
    - <doc:FAQ-MigrateFromRevenueCat>
    - <doc:FAQ-MigrateFromPaidUpFront>
 }

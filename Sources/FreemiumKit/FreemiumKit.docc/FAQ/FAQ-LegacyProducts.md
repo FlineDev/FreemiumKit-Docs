@@ -21,7 +21,7 @@ Once purchases are created, submitted, and approved on the App Store, you no lon
 
 With FreemiumKit, it's easy to mark products you had created in the past as "legacy". First, you need to do some setup within the FreemiumKit app:
 
-1. For each products you want to mark as "legacy", uncheck the checkbox in front of the product in the "Products" tab.
+1. For each product you want to mark as "legacy", uncheck the checkbox in front of the product in the "Products" tab.
 2. Press on "Save Changes to Remote" on the "Paywalls" tab.
 
 This makes sure that your legacy products are no longer shown in the paywall. But it doesn't give your users access to the features they already paid for.
