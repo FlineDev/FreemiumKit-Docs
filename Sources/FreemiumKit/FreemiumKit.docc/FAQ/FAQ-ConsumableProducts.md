@@ -55,6 +55,7 @@ struct MyApp: App {
         }
     }
 }
+```
 
 ### Managing Purchases
 
@@ -96,6 +97,10 @@ ConsumablePurchaseButton(
 ```
 
 FreemiumKit handles all the complexity of loading product information from the App Store, managing purchase states, and handling errors. You'll receive push notifications for new purchases and can track them in the FreemiumKit dashboard.
+
+A great example of consumable products in action is [TranslateKit](https://translatekit.app), which provides monthly 'AI Tokens' in its subscription tiers, but offers additional AI Tokens for purchase when more is needed:
+
+@Image(source: "TranslateKit-Consumables")
 
 Whether you're implementing in-game currency, donation buttons, or AI token purchases, that's how easy it is to add consumable products with FreemiumKit!
 
