@@ -96,6 +96,8 @@ ConsumablePurchaseButton(
 }
 ```
 
+Note that it is important to call `finish()` on the `Transaction` parameter (like done in above examples) as soon as you have provided the user with their purchased content.
+
 FreemiumKit handles all the complexity of loading product information from the App Store, managing purchase states, and handling errors. You'll receive push notifications for new purchases and can track them in the FreemiumKit dashboard.
 
 A great example of consumable products in action is [TranslateKit](https://translatekit.app), which provides monthly 'AI Tokens' in its subscription tiers, but offers additional AI Tokens for purchase when more is needed:
